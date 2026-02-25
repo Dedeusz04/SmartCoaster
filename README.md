@@ -110,6 +110,4 @@ The circuit is assembled on a universal PCB and mounted inside a plastic enclosu
 - **IR and ToF sensor apertures** — unobstructed optical path to the cup bottom
 - **OLED display** — visible through the transparent cover
 
-## License
 
-This project is provided as-is for educational and personal use.
