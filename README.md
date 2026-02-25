@@ -14,7 +14,7 @@ An embedded system built on the **NodeMCU ESP8266** that detects cup presence, m
 - Persistent user settings (EEPROM)
 - Audible buzzer alerts
 
-For a detailed description of the hardware design, calibration algorithm, state machine logic, and enclosure construction, refer to the **project report** included in this repository (`v1.Raport_Bartosz.Kepa.pdf`).
+For a detailed description, refer to the **project report** included in this repository (`v1.Raport_Bartosz.Kepa.pdf`).
 
 ## Pin Assignment
 
