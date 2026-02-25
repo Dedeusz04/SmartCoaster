@@ -3,7 +3,7 @@
 An embedded system built on the **NodeMCU ESP8266** platform that automatically detects cup presence, monitors beverage temperature in real time, and notifies the user when the drink has reached the desired drinking temperature.
 
 ![Block Diagram](1.png)
-
+![gif](fastgifdedeusz.gif)
 ## Features
 
 - **Automatic cup detection** using a VL6180X Time-of-Flight proximity sensor (effective range up to 50 mm)
