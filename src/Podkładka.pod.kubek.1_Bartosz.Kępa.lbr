@@ -1,0 +1,2321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.7.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+<setting extendedlayers="yes"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" blackcolor="0xccc90d0c" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccc90000" whitehighlight="0xccc90000" coloredhighlight="0xccc90000" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" blackcolor="0xccffe74c" whitecolor="0xccffe74c" coloredcolor="0xccffe74c" blackhighlight="0xccffd900" whitehighlight="0xccffd900" coloredhighlight="0xccffd900" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" blackcolor="0xcc91d178" whitecolor="0xcc91d178" coloredcolor="0xcc91d178" blackhighlight="0xcc3bd100" whitehighlight="0xcc3bd100" coloredhighlight="0xcc3bd100" fill="1" visible="no" active="yes"/>
+<layer number="4" name="Route4" blackcolor="0xccffdda1" whitecolor="0xccffdda1" coloredcolor="0xccffdda1" blackhighlight="0xccffa200" whitehighlight="0xccffa200" coloredhighlight="0xccffa200" fill="1" visible="no" active="yes"/>
+<layer number="5" name="Route5" blackcolor="0xcc5fad56" whitecolor="0xcc5fad56" coloredcolor="0xcc5fad56" blackhighlight="0xcc14ad00" whitehighlight="0xcc14ad00" coloredhighlight="0xcc14ad00" fill="1" visible="no" active="yes"/>
+<layer number="6" name="Route6" blackcolor="0xcc5e897c" whitecolor="0xcc5e897c" coloredcolor="0xcc5e897c" blackhighlight="0xcc00895e" whitehighlight="0xcc00895e" coloredhighlight="0xcc00895e" fill="1" visible="no" active="yes"/>
+<layer number="7" name="Route7" blackcolor="0xcc6f45b4" whitecolor="0xcc6f45b4" coloredcolor="0xcc6f45b4" blackhighlight="0xcc4200b4" whitehighlight="0xcc4200b4" coloredhighlight="0xcc4200b4" fill="1" visible="no" active="yes"/>
+<layer number="8" name="Route8" blackcolor="0xcc516363" whitecolor="0xcc516363" coloredcolor="0xcc516363" blackhighlight="0xcc006363" whitehighlight="0xcc006363" coloredhighlight="0xcc006363" fill="1" visible="no" active="yes"/>
+<layer number="9" name="Route9" blackcolor="0xccd6a2ad" whitecolor="0xccd6a2ad" coloredcolor="0xccd6a2ad" blackhighlight="0xccd6002e" whitehighlight="0xccd6002e" coloredhighlight="0xccd6002e" fill="1" visible="no" active="yes"/>
+<layer number="10" name="Route10" blackcolor="0xccef476f" whitecolor="0xccef476f" coloredcolor="0xccef476f" blackhighlight="0xccef003c" whitehighlight="0xccef003c" coloredhighlight="0xccef003c" fill="1" visible="no" active="yes"/>
+<layer number="11" name="Route11" blackcolor="0xccd4dcff" whitecolor="0xccd4dcff" coloredcolor="0xccd4dcff" blackhighlight="0xcc0033ff" whitehighlight="0xcc0033ff" coloredhighlight="0xcc0033ff" fill="1" visible="no" active="yes"/>
+<layer number="12" name="Route12" blackcolor="0xcc00bfb2" whitecolor="0xcc00bfb2" coloredcolor="0xcc00bfb2" blackhighlight="0xcc00bfaf" whitehighlight="0xcc00bfaf" coloredhighlight="0xcc00bfaf" fill="1" visible="no" active="yes"/>
+<layer number="13" name="Route13" blackcolor="0xcc65def1" whitecolor="0xcc65def1" coloredcolor="0xcc65def1" blackhighlight="0xcc00d1f1" whitehighlight="0xcc00d1f1" coloredhighlight="0xcc00d1f1" fill="1" visible="no" active="yes"/>
+<layer number="14" name="Route14" blackcolor="0xccc55ea3" whitecolor="0xccc55ea3" coloredcolor="0xccc55ea3" blackhighlight="0xccc50087" whitehighlight="0xccc50087" coloredhighlight="0xccc50087" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" blackcolor="0xccf56416" whitecolor="0xccf56416" coloredcolor="0xccf56416" blackhighlight="0xccf55200" whitehighlight="0xccf55200" coloredhighlight="0xccf55200" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Route16" blackcolor="0xcc0696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xcc0097d7" whitehighlight="0xcc0097d7" coloredhighlight="0xcc0097d7" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" blackcolor="0xcc3ddc97" whitecolor="0xcc0dab76" coloredcolor="0xcc0dab76" blackhighlight="0xcc00dc79" whitehighlight="0xcc00ab6f" coloredhighlight="0xcc00ab6f" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" blackcolor="0xcc3ddc97" whitecolor="0xcc0dab76" coloredcolor="0xcc0dab76" blackhighlight="0xcc00dc79" whitehighlight="0xcc00ab6f" coloredhighlight="0xcc00ab6f" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" blackcolor="0xccc8c832" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xccc8c800" whitehighlight="0xbbc8c800" coloredhighlight="0xbbc8c800" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="BoardOutline" blackcolor="0xcceec643" whitecolor="0xcceec643" coloredcolor="0xcceec643" blackhighlight="0xcceeb300" whitehighlight="0xcceeb300" coloredhighlight="0xcceeb300" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="SilkscreenTop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="SilkscreenBottom" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="OriginsTop" blackcolor="0xccafd134" whitecolor="0xccafd134" coloredcolor="0xccafd134" blackhighlight="0xcca7d100" whitehighlight="0xcca7d100" coloredhighlight="0xcca7d100" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="OriginsBottom" blackcolor="0xccafd134" whitecolor="0xccafd134" coloredcolor="0xccafd134" blackhighlight="0xcca7d100" whitehighlight="0xcca7d100" coloredhighlight="0xcca7d100" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="NamesTop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="NamesBottom" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="ValuesTop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="ValuesBottom" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="SolderMaskTop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="3" visible="no" active="yes"/>
+<layer number="30" name="SolderMaskBottom" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="6" visible="no" active="yes"/>
+<layer number="31" name="StencilTop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="4" visible="no" active="yes"/>
+<layer number="32" name="StencilBottom" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="5" visible="no" active="yes"/>
+<layer number="33" name="FinishTop" blackcolor="0xccc8c832" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xccc8c800" whitehighlight="0xbbc8c800" coloredhighlight="0xbbc8c800" fill="3" visible="no" active="yes"/>
+<layer number="34" name="FinishBottom" blackcolor="0xccc8c832" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xccc8c800" whitehighlight="0xbbc8c800" coloredhighlight="0xbbc8c800" fill="6" visible="no" active="yes"/>
+<layer number="35" name="GlueTop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="4" visible="no" active="yes"/>
+<layer number="36" name="GlueBottom" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="5" visible="no" active="yes"/>
+<layer number="37" name="TestTop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="no" active="yes"/>
+<layer number="38" name="TestBottom" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="no" active="yes"/>
+<layer number="39" name="ComponentExcludeTop" blackcolor="0xccc90d0c" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccc90000" whitehighlight="0xccc90000" coloredhighlight="0xccc90000" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="ComponentExcludeBottom" blackcolor="0xcc0696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xcc0097d7" whitehighlight="0xcc0097d7" coloredhighlight="0xcc0097d7" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="RestrictTop" blackcolor="0xccc90d0c" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccc90000" whitehighlight="0xccc90000" coloredhighlight="0xccc90000" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="RestrictBottom" blackcolor="0xcc0696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xcc0097d7" whitehighlight="0xcc0097d7" coloredhighlight="0xcc0097d7" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="RestrictVias" blackcolor="0xcc3ddc97" whitecolor="0xcc0dab76" coloredcolor="0xcc0dab76" blackhighlight="0xcc00dc79" whitehighlight="0xcc00ab6f" coloredhighlight="0xcc00ab6f" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" blackcolor="0xcc32c8c8" whitecolor="0xb432c8c8" coloredcolor="0xb432c8c8" blackhighlight="0xcc00c8c8" whitehighlight="0xb400c8c8" coloredhighlight="0xb400c8c8" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="DocumentTop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="DocumentBottom" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" blackcolor="0xb40000ff" whitecolor="0xcc8252c2" coloredcolor="0xcc8252c2" blackhighlight="0xb40000ff" whitehighlight="0xcc5100c2" coloredhighlight="0xcc5100c2" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" blackcolor="0xb40000ff" whitecolor="0xcc8252c2" coloredcolor="0xcc8252c2" blackhighlight="0xb40000ff" whitehighlight="0xcc5100c2" coloredhighlight="0xcc5100c2" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" blackcolor="0xccffba08" whitecolor="0xccffba08" coloredcolor="0xccffba08" blackhighlight="0xccffb700" whitehighlight="0xccffb700" coloredhighlight="0xccffb700" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" blackcolor="0xcc3ddc97" whitecolor="0xcc0dab76" coloredcolor="0xcc0dab76" blackhighlight="0xcc00dc79" whitehighlight="0xcc00ab6f" coloredhighlight="0xcc00ab6f" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" blackcolor="0xcc0696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xcc0097d7" whitehighlight="0xcc0097d7" coloredhighlight="0xcc0097d7" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" blackcolor="0xcc3ddc97" whitecolor="0xcc0dab76" coloredcolor="0xcc0dab76" blackhighlight="0xcc00dc79" whitehighlight="0xcc00ab6f" coloredhighlight="0xcc00ab6f" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" blackcolor="0xccc90d0c" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccc90000" whitehighlight="0xccc90000" coloredhighlight="0xccc90000" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xccc8c8c8" whitehighlight="0xbb808080" coloredhighlight="0xbb808080" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" blackcolor="0xccc8c832" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xccc8c800" whitehighlight="0xbbc8c800" coloredhighlight="0xbbc8c800" fill="1" visible="yes" active="yes"/>
+<layer number="257" name="Route17" blackcolor="0xc816acac" whitecolor="0xc816acac" coloredcolor="0xc816acac" blackhighlight="0xc800acac" whitehighlight="0xc800acac" coloredhighlight="0xc800acac" fill="1" visible="no" active="yes"/>
+<layer number="258" name="Route18" blackcolor="0xc84777bf" whitecolor="0xc84777bf" coloredcolor="0xc84777bf" blackhighlight="0xc8004cbf" whitehighlight="0xc8004cbf" coloredhighlight="0xc8004cbf" fill="1" visible="no" active="yes"/>
+<layer number="259" name="Route19" blackcolor="0xc84f1aa8" whitecolor="0xc84f1aa8" coloredcolor="0xc84f1aa8" blackhighlight="0xc83e00a8" whitehighlight="0xc83e00a8" coloredhighlight="0xc83e00a8" fill="1" visible="no" active="yes"/>
+<layer number="260" name="Route20" blackcolor="0xc81b9a8c" whitecolor="0xc81b9a8c" coloredcolor="0xc81b9a8c" blackhighlight="0xc8009a88" whitehighlight="0xc8009a88" coloredhighlight="0xc8009a88" fill="1" visible="no" active="yes"/>
+<layer number="261" name="Route21" blackcolor="0xc89f0e6d" whitecolor="0xc89f0e6d" coloredcolor="0xc89f0e6d" blackhighlight="0xc89f006a" whitehighlight="0xc89f006a" coloredhighlight="0xc89f006a" fill="1" visible="no" active="yes"/>
+<layer number="262" name="Route22" blackcolor="0xc89118bb" whitecolor="0xc89118bb" coloredcolor="0xc89118bb" blackhighlight="0xc88900bb" whitehighlight="0xc88900bb" coloredhighlight="0xc88900bb" fill="1" visible="no" active="yes"/>
+<layer number="263" name="Route23" blackcolor="0xc850779a" whitecolor="0xc850779a" coloredcolor="0xc850779a" blackhighlight="0xc800529a" whitehighlight="0xc800529a" coloredhighlight="0xc800529a" fill="1" visible="no" active="yes"/>
+<layer number="264" name="Route24" blackcolor="0xc8538782" whitecolor="0xc8538782" coloredcolor="0xc8538782" blackhighlight="0xc800877a" whitehighlight="0xc800877a" coloredhighlight="0xc800877a" fill="1" visible="no" active="yes"/>
+<layer number="265" name="Route25" blackcolor="0xc8917328" whitecolor="0xc8917328" coloredcolor="0xc8917328" blackhighlight="0xc8916600" whitehighlight="0xc8916600" coloredhighlight="0xc8916600" fill="1" visible="no" active="yes"/>
+<layer number="266" name="Route26" blackcolor="0xc8b83da5" whitecolor="0xc8b83da5" coloredcolor="0xc8b83da5" blackhighlight="0xc8b8009c" whitehighlight="0xc8b8009c" coloredhighlight="0xc8b8009c" fill="1" visible="no" active="yes"/>
+<layer number="267" name="Route27" blackcolor="0xc8038e4b" whitecolor="0xc8038e4b" coloredcolor="0xc8038e4b" blackhighlight="0xc8008e49" whitehighlight="0xc8008e49" coloredhighlight="0xc8008e49" fill="1" visible="no" active="yes"/>
+<layer number="268" name="Route28" blackcolor="0xc8de7da6" whitecolor="0xc8de7da6" coloredcolor="0xc8de7da6" blackhighlight="0xc8de0060" whitehighlight="0xc8de0060" coloredhighlight="0xc8de0060" fill="1" visible="no" active="yes"/>
+<layer number="269" name="Route29" blackcolor="0xc8312f9f" whitecolor="0xc8312f9f" coloredcolor="0xc8312f9f" blackhighlight="0xc803009f" whitehighlight="0xc803009f" coloredhighlight="0xc803009f" fill="1" visible="no" active="yes"/>
+<layer number="270" name="Route30" blackcolor="0xc89e5723" whitecolor="0xc89e5723" coloredcolor="0xc89e5723" blackhighlight="0xc89e4200" whitehighlight="0xc89e4200" coloredhighlight="0xc89e4200" fill="1" visible="no" active="yes"/>
+<layer number="271" name="Route31" blackcolor="0xc84394a6" whitecolor="0xc84394a6" coloredcolor="0xc84394a6" blackhighlight="0xc8008aa6" whitehighlight="0xc8008aa6" coloredhighlight="0xc8008aa6" fill="1" visible="no" active="yes"/>
+<layer number="272" name="Route32" blackcolor="0xcce8c102" whitecolor="0xcce8c102" coloredcolor="0xcce8c102" blackhighlight="0xcce8bd00" whitehighlight="0xcce8bd00" coloredhighlight="0xcce8bd00" fill="1" visible="no" active="yes"/>
+<layer number="273" name="Route33" blackcolor="0xc86ac347" whitecolor="0xc86ac347" coloredcolor="0xc86ac347" blackhighlight="0xc837c300" whitehighlight="0xc837c300" coloredhighlight="0xc837c300" fill="1" visible="no" active="yes"/>
+<layer number="274" name="Route34" blackcolor="0xc8eec070" whitecolor="0xc8eec070" coloredcolor="0xc8eec070" blackhighlight="0xc8ee9700" whitehighlight="0xc8ee9700" coloredhighlight="0xc8ee9700" fill="1" visible="no" active="yes"/>
+<layer number="275" name="Route35" blackcolor="0xc89be191" whitecolor="0xc89be191" coloredcolor="0xc89be191" blackhighlight="0xc81ee100" whitehighlight="0xc81ee100" coloredhighlight="0xc81ee100" fill="1" visible="no" active="yes"/>
+<layer number="276" name="Route36" blackcolor="0xc87d46db" whitecolor="0xc87d46db" coloredcolor="0xc87d46db" blackhighlight="0xc85000db" whitehighlight="0xc85000db" coloredhighlight="0xc85000db" fill="1" visible="no" active="yes"/>
+<layer number="277" name="Route37" blackcolor="0xc846a989" whitecolor="0xc846a989" coloredcolor="0xc846a989" blackhighlight="0xc800a971" whitehighlight="0xc800a971" coloredhighlight="0xc800a971" fill="1" visible="no" active="yes"/>
+<layer number="278" name="Route38" blackcolor="0xc8d975b7" whitecolor="0xc8d975b7" coloredcolor="0xc8d975b7" blackhighlight="0xc8d90091" whitehighlight="0xc8d90091" coloredhighlight="0xc8d90091" fill="1" visible="no" active="yes"/>
+<layer number="279" name="Route39" blackcolor="0xc850d1e5" whitecolor="0xc850d1e5" coloredcolor="0xc850d1e5" blackhighlight="0xc800c6e5" whitehighlight="0xc800c6e5" coloredhighlight="0xc800c6e5" fill="1" visible="no" active="yes"/>
+<layer number="280" name="Route40" blackcolor="0xc8d9f6bd" whitecolor="0xc8d9f6bd" coloredcolor="0xc8d9f6bd" blackhighlight="0xc87bf600" whitehighlight="0xc87bf600" coloredhighlight="0xc87bf600" fill="1" visible="no" active="yes"/>
+<layer number="281" name="Route41" blackcolor="0xc887ceeb" whitecolor="0xc887ceeb" coloredcolor="0xc887ceeb" blackhighlight="0xc800a8eb" whitehighlight="0xc800a8eb" coloredhighlight="0xc800a8eb" fill="1" visible="no" active="yes"/>
+<layer number="282" name="Route42" blackcolor="0xc8da70d6" whitecolor="0xc8da70d6" coloredcolor="0xc8da70d6" blackhighlight="0xc8da00d3" whitehighlight="0xc8da00d3" coloredhighlight="0xc8da00d3" fill="1" visible="no" active="yes"/>
+<layer number="283" name="Route43" blackcolor="0xc832cd32" whitecolor="0xc832cd32" coloredcolor="0xc832cd32" blackhighlight="0xc800cd00" whitehighlight="0xc800cd00" coloredhighlight="0xc800cd00" fill="1" visible="no" active="yes"/>
+<layer number="284" name="Route44" blackcolor="0xc8c2760c" whitecolor="0xc8c2760c" coloredcolor="0xc8c2760c" blackhighlight="0xc8c26e00" whitehighlight="0xc8c26e00" coloredhighlight="0xc8c26e00" fill="1" visible="no" active="yes"/>
+<layer number="285" name="Route45" blackcolor="0xc82ec6c6" whitecolor="0xc82ec6c6" coloredcolor="0xc82ec6c6" blackhighlight="0xc800c6c6" whitehighlight="0xc800c6c6" coloredhighlight="0xc800c6c6" fill="1" visible="no" active="yes"/>
+<layer number="286" name="Route46" blackcolor="0xc8eca3d3" whitecolor="0xc8eca3d3" coloredcolor="0xc8eca3d3" blackhighlight="0xc8ec009d" whitehighlight="0xc8ec009d" coloredhighlight="0xc8ec009d" fill="1" visible="no" active="yes"/>
+<layer number="287" name="Route47" blackcolor="0xc83d4ed2" whitecolor="0xc83d4ed2" coloredcolor="0xc83d4ed2" blackhighlight="0xc80018d2" whitehighlight="0xc80018d2" coloredhighlight="0xc80018d2" fill="1" visible="no" active="yes"/>
+<layer number="288" name="Route48" blackcolor="0xc89e15d9" whitecolor="0xc89e15d9" coloredcolor="0xc89e15d9" blackhighlight="0xc89400d9" whitehighlight="0xc89400d9" coloredhighlight="0xc89400d9" fill="1" visible="no" active="yes"/>
+<layer number="289" name="Route49" blackcolor="0xc862dcdc" whitecolor="0xc862dcdc" coloredcolor="0xc862dcdc" blackhighlight="0xc800dcdc" whitehighlight="0xc800dcdc" coloredhighlight="0xc800dcdc" fill="1" visible="no" active="yes"/>
+<layer number="290" name="Route50" blackcolor="0xc881a7df" whitecolor="0xc881a7df" coloredcolor="0xc881a7df" blackhighlight="0xc8005ddf" whitehighlight="0xc8005ddf" coloredhighlight="0xc8005ddf" fill="1" visible="no" active="yes"/>
+<layer number="291" name="Route51" blackcolor="0xc8825bc5" whitecolor="0xc8825bc5" coloredcolor="0xc8825bc5" blackhighlight="0xc84800c5" whitehighlight="0xc84800c5" coloredhighlight="0xc84800c5" fill="1" visible="no" active="yes"/>
+<layer number="292" name="Route52" blackcolor="0xc839dbb8" whitecolor="0xc839dbb8" coloredcolor="0xc839dbb8" blackhighlight="0xc800dbac" whitehighlight="0xc800dbac" coloredhighlight="0xc800dbac" fill="1" visible="no" active="yes"/>
+<layer number="293" name="Route53" blackcolor="0xc8b84992" whitecolor="0xc8b84992" coloredcolor="0xc8b84992" blackhighlight="0xc8b8007b" whitehighlight="0xc8b8007b" coloredhighlight="0xc8b8007b" fill="1" visible="no" active="yes"/>
+<layer number="294" name="Route54" blackcolor="0xc8b664d3" whitecolor="0xc8b664d3" coloredcolor="0xc8b664d3" blackhighlight="0xc89b00d3" whitehighlight="0xc89b00d3" coloredhighlight="0xc89b00d3" fill="1" visible="no" active="yes"/>
+<layer number="295" name="Route55" blackcolor="0xc8c0d983" whitecolor="0xc8c0d983" coloredcolor="0xc8c0d983" blackhighlight="0xc89cd900" whitehighlight="0xc89cd900" coloredhighlight="0xc89cd900" fill="1" visible="no" active="yes"/>
+<layer number="296" name="Route56" blackcolor="0xc876fbda" whitecolor="0xc876fbda" coloredcolor="0xc876fbda" blackhighlight="0xc800fbbc" whitehighlight="0xc800fbbc" coloredhighlight="0xc800fbbc" fill="1" visible="no" active="yes"/>
+<layer number="297" name="Route57" blackcolor="0xc8d0b163" whitecolor="0xc8d0b163" coloredcolor="0xc8d0b163" blackhighlight="0xc8d09200" whitehighlight="0xc8d09200" coloredhighlight="0xc8d09200" fill="1" visible="no" active="yes"/>
+<layer number="298" name="Route58" blackcolor="0xc83369c5" whitecolor="0xc83369c5" coloredcolor="0xc83369c5" blackhighlight="0xc8004cc5" whitehighlight="0xc8004cc5" coloredhighlight="0xc8004cc5" fill="1" visible="no" active="yes"/>
+<layer number="299" name="Route59" blackcolor="0xc840ad78" whitecolor="0xc840ad78" coloredcolor="0xc840ad78" blackhighlight="0xc800ad57" whitehighlight="0xc800ad57" coloredhighlight="0xc800ad57" fill="1" visible="no" active="yes"/>
+<layer number="300" name="Route60" blackcolor="0xc8d5397b" whitecolor="0xc8d5397b" coloredcolor="0xc8d5397b" blackhighlight="0xc8d5005c" whitehighlight="0xc8d5005c" coloredhighlight="0xc8d5005c" fill="1" visible="no" active="yes"/>
+<layer number="301" name="Route61" blackcolor="0xc86462c9" whitecolor="0xc86462c9" coloredcolor="0xc86462c9" blackhighlight="0xc80300c9" whitehighlight="0xc80300c9" coloredhighlight="0xc80300c9" fill="1" visible="no" active="yes"/>
+<layer number="302" name="Route62" blackcolor="0xc8c68353" whitecolor="0xc8c68353" coloredcolor="0xc8c68353" blackhighlight="0xc8c65200" whitehighlight="0xc8c65200" coloredhighlight="0xc8c65200" fill="1" visible="no" active="yes"/>
+<layer number="303" name="Route63" blackcolor="0xc881c9d9" whitecolor="0xc881c9d9" coloredcolor="0xc881c9d9" blackhighlight="0xc800b5d9" whitehighlight="0xc800b5d9" coloredhighlight="0xc800b5d9" fill="1" visible="no" active="yes"/>
+<layer number="304" name="Bottom" blackcolor="0xcc0698d7" whitecolor="0xcc0698d7" coloredcolor="0xcc0698d7" blackhighlight="0xcc0097d7" whitehighlight="0xcc0097d7" coloredhighlight="0xcc0097d7" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="NODEMCU_ESP8266" library_version="4" use_placeholder="yes">
+<pad name="VIN" x="11.43" y="19.05" drill="0.8" shape="long"/>
+<pad name="GND@4" x="11.43" y="16.51" drill="0.8" shape="long"/>
+<pad name="RST" x="11.43" y="13.97" drill="0.8" shape="long"/>
+<pad name="EN" x="11.43" y="11.43" drill="0.8" shape="long"/>
+<pad name="3V3@3" x="11.43" y="8.89" drill="0.8" shape="long"/>
+<pad name="GND@3" x="11.43" y="6.35" drill="0.8" shape="long"/>
+<pad name="CLK" x="11.43" y="3.81" drill="0.8" shape="long"/>
+<pad name="SDO" x="11.43" y="1.27" drill="0.8" shape="long"/>
+<pad name="CMD" x="11.43" y="-1.27" drill="0.8" shape="long"/>
+<pad name="SD1" x="11.43" y="-3.81" drill="0.8" shape="long"/>
+<pad name="SD2" x="11.43" y="-6.35" drill="0.8" shape="long"/>
+<pad name="SD3" x="11.43" y="-8.89" drill="0.8" shape="long"/>
+<pad name="GND@5" x="11.43" y="-13.97" drill="0.8" shape="long"/>
+<pad name="VV" x="11.43" y="-11.43" drill="0.8" shape="long"/>
+<pad name="A0" x="11.43" y="-16.51" drill="0.8" shape="long"/>
+<pad name="3V3@1" x="-11.43" y="19.05" drill="0.8" shape="long"/>
+<pad name="GND@1" x="-11.43" y="16.51" drill="0.8" shape="long"/>
+<pad name="TX" x="-11.43" y="13.97" drill="0.8" shape="long"/>
+<pad name="RX" x="-11.43" y="11.43" drill="0.8" shape="long"/>
+<pad name="D8" x="-11.43" y="8.89" drill="0.8" shape="long"/>
+<pad name="D7" x="-11.43" y="6.35" drill="0.8" shape="long"/>
+<pad name="D6" x="-11.43" y="3.81" drill="0.8" shape="long"/>
+<pad name="D5" x="-11.43" y="1.27" drill="0.8" shape="long"/>
+<pad name="GND@2" x="-11.43" y="-1.27" drill="0.8" shape="long"/>
+<pad name="3V3@2" x="-11.43" y="-3.81" drill="0.8" shape="long"/>
+<pad name="D4" x="-11.43" y="-6.35" drill="0.8" shape="long"/>
+<pad name="D3" x="-11.43" y="-8.89" drill="0.8" shape="long"/>
+<pad name="D2" x="-11.43" y="-11.43" drill="0.8" shape="long"/>
+<pad name="D1" x="-11.43" y="-13.97" drill="0.8" shape="long"/>
+<pad name="D0" x="-11.43" y="-16.51" drill="0.8" shape="long"/>
+<wire x1="13.97" y1="24.13" x2="13.97" y2="-21.59" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-24.13" x2="6.35" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-24.13" x2="-11.43" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-21.59" x2="-13.97" y2="24.13" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="26.67" x2="11.43" y2="26.67" width="0.127" layer="21"/>
+<hole x="10.16" y="22.86" drill="3"/>
+<hole x="10.16" y="-20.32" drill="3"/>
+<hole x="-10.16" y="-20.32" drill="3"/>
+<hole x="-10.16" y="22.86" drill="3"/>
+<wire x1="11.43" y1="26.67" x2="13.97" y2="24.13" width="0.127" layer="21" curve="-90"/>
+<wire x1="13.97" y1="-21.59" x2="11.43" y2="-24.13" width="0.127" layer="21" curve="-90"/>
+<wire x1="-11.43" y1="26.67" x2="-13.97" y2="24.13" width="0.127" layer="21" curve="90"/>
+<wire x1="-11.43" y1="-24.13" x2="-13.97" y2="-21.59" width="0.127" layer="21" curve="-90"/>
+<pad name="P$31" x="10.16" y="22.86" drill="3" rot="R270"/>
+<pad name="P$32" x="-10.16" y="22.86" drill="3" rot="R270"/>
+<pad name="P$33" x="-10.16" y="-20.32" drill="3" rot="R270"/>
+<pad name="P$34" x="10.16" y="-20.32" drill="3" rot="R270"/>
+<rectangle x1="7.3025" y1="-7.9375" x2="7.9375" y2="-6.6675" layer="21" rot="R270"/>
+<rectangle x1="7.3025" y1="-9.2075" x2="7.9375" y2="-7.9375" layer="21" rot="R270"/>
+<rectangle x1="7.3025" y1="-10.4775" x2="7.9375" y2="-9.2075" layer="21" rot="R270"/>
+<rectangle x1="7.3025" y1="-11.7475" x2="7.9375" y2="-10.4775" layer="21" rot="R270"/>
+<rectangle x1="7.3025" y1="-13.0175" x2="7.9375" y2="-11.7475" layer="21" rot="R270"/>
+<rectangle x1="7.3025" y1="-14.2875" x2="7.9375" y2="-13.0175" layer="21" rot="R270"/>
+<rectangle x1="7.3025" y1="-15.5575" x2="7.9375" y2="-14.2875" layer="21" rot="R270"/>
+<rectangle x1="7.3025" y1="-16.8275" x2="7.9375" y2="-15.5575" layer="21" rot="R270"/>
+<rectangle x1="7.3025" y1="-18.0975" x2="7.9375" y2="-16.8275" layer="21" rot="R270"/>
+<rectangle x1="5.08" y1="-5.715" x2="5.715" y2="-4.445" layer="21"/>
+<rectangle x1="3.81" y1="-5.715" x2="4.445" y2="-4.445" layer="21"/>
+<rectangle x1="2.54" y1="-5.715" x2="3.175" y2="-4.445" layer="21"/>
+<rectangle x1="1.27" y1="-5.715" x2="1.905" y2="-4.445" layer="21"/>
+<rectangle x1="0" y1="-5.715" x2="0.635" y2="-4.445" layer="21"/>
+<rectangle x1="-1.27" y1="-5.715" x2="-0.635" y2="-4.445" layer="21"/>
+<rectangle x1="-2.54" y1="-5.715" x2="-1.905" y2="-4.445" layer="21"/>
+<rectangle x1="-3.81" y1="-5.715" x2="-3.175" y2="-4.445" layer="21"/>
+<rectangle x1="-5.08" y1="-5.715" x2="-4.445" y2="-4.445" layer="21"/>
+<rectangle x1="-7.9375" y1="-18.0975" x2="-7.3025" y2="-16.8275" layer="21" rot="R90"/>
+<rectangle x1="-7.9375" y1="-7.9375" x2="-7.3025" y2="-6.6675" layer="21" rot="R90"/>
+<rectangle x1="-7.9375" y1="-9.2075" x2="-7.3025" y2="-7.9375" layer="21" rot="R90"/>
+<rectangle x1="-7.9375" y1="-10.4775" x2="-7.3025" y2="-9.2075" layer="21" rot="R90"/>
+<rectangle x1="-7.9375" y1="-11.7475" x2="-7.3025" y2="-10.4775" layer="21" rot="R90"/>
+<rectangle x1="-7.9375" y1="-13.0175" x2="-7.3025" y2="-11.7475" layer="21" rot="R90"/>
+<rectangle x1="-7.9375" y1="-14.2875" x2="-7.3025" y2="-13.0175" layer="21" rot="R90"/>
+<rectangle x1="-7.9375" y1="-15.5575" x2="-7.3025" y2="-14.2875" layer="21" rot="R90"/>
+<rectangle x1="-7.9375" y1="-16.8275" x2="-7.3025" y2="-15.5575" layer="21" rot="R90"/>
+<wire x1="6.35" y1="-6.35" x2="6.35" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-19.05" x2="-6.35" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-19.05" x2="-6.35" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-6.35" x2="6.35" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-19.05" x2="6.35" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-24.13" x2="-6.35" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-24.13" x2="-6.35" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-17.78" x2="5.08" y2="-22.86" width="0.8128" layer="21"/>
+<wire x1="5.08" y1="-22.86" x2="3.81" y2="-22.86" width="0.8128" layer="21"/>
+<wire x1="3.81" y1="-22.86" x2="3.81" y2="-20.32" width="0.8128" layer="21"/>
+<wire x1="3.81" y1="-20.32" x2="2.54" y2="-20.32" width="0.8128" layer="21"/>
+<wire x1="2.54" y1="-20.32" x2="2.54" y2="-22.86" width="0.8128" layer="21"/>
+<wire x1="2.54" y1="-22.86" x2="1.27" y2="-22.86" width="0.8128" layer="21"/>
+<wire x1="1.27" y1="-22.86" x2="1.27" y2="-20.32" width="0.8128" layer="21"/>
+<wire x1="1.27" y1="-20.32" x2="0" y2="-20.32" width="0.8128" layer="21"/>
+<wire x1="0" y1="-20.32" x2="0" y2="-22.86" width="0.8128" layer="21"/>
+<wire x1="0" y1="-22.86" x2="-1.27" y2="-22.86" width="0.8128" layer="21"/>
+<wire x1="-1.27" y1="-22.86" x2="-1.27" y2="-20.32" width="0.8128" layer="21"/>
+<wire x1="-1.27" y1="-20.32" x2="-2.54" y2="-20.32" width="0.8128" layer="21"/>
+<wire x1="-2.54" y1="-20.32" x2="-2.54" y2="-22.86" width="0.8128" layer="21"/>
+<wire x1="-2.54" y1="-22.86" x2="-5.08" y2="-22.86" width="0.8128" layer="21"/>
+<text x="-1.27" y="-8.255" size="1.6764" layer="21" rot="R270">ESP8266</text>
+<text x="1.27" y="-11.43" size="1.4224" layer="21" rot="R270">wifi</text>
+<text x="0" y="15.875" size="1.6764" layer="21" rot="R270">NODEMCU V2</text>
+<text x="-11.43" y="27.94" size="1.27" layer="25">&gt;Name</text>
+<text x="-11.43" y="-26.67" size="1.27" layer="27">&gt;Value</text>
+<text x="-9.525" y="18.415" size="1.27" layer="21">3V3</text>
+<text x="-9.525" y="15.875" size="1.27" layer="21">GND</text>
+<text x="-9.525" y="13.335" size="1.27" layer="21">TX</text>
+<text x="-9.525" y="10.795" size="1.27" layer="21">RX</text>
+<text x="-9.525" y="8.255" size="1.27" layer="21">D8</text>
+<text x="-9.525" y="5.715" size="1.27" layer="21">D7</text>
+<text x="-9.525" y="3.175" size="1.27" layer="21">D6</text>
+<text x="-9.525" y="0.635" size="1.27" layer="21">D5</text>
+<text x="-9.525" y="-1.905" size="1.27" layer="21">GND</text>
+<text x="-9.525" y="-4.445" size="1.27" layer="21">3V3</text>
+<text x="-9.525" y="-6.985" size="1.27" layer="21">D4</text>
+<text x="-3.81" y="-8.255" size="1.27" layer="21" rot="R180">D3</text>
+<text x="-3.81" y="-10.795" size="1.27" layer="21" rot="R180">D2</text>
+<text x="-3.81" y="-13.335" size="1.27" layer="21" rot="R180">D1</text>
+<text x="-3.81" y="-15.875" size="1.27" layer="21" rot="R180">D0</text>
+<text x="8.5575" y="-15.475" size="1.27" layer="21" rot="R270">A0</text>
+<text x="7.07" y="18.415" size="1.27" layer="21">VIN</text>
+<text x="9.525" y="17.145" size="1.27" layer="21" rot="R180">GND</text>
+<text x="9.525" y="14.605" size="1.27" layer="21" rot="R180">RST</text>
+<text x="9.525" y="12.065" size="1.27" layer="21" rot="R180">EN</text>
+<text x="9.525" y="9.525" size="1.27" layer="21" rot="R180">3V3</text>
+<text x="9.525" y="6.985" size="1.27" layer="21" rot="R180">GND</text>
+<text x="9.525" y="3.81" size="1.27" layer="21" rot="R180">CLK</text>
+</package>
+<package name="BUZZER_PASSIVE_12MM" use_placeholder="yes">
+<description>Passive Buzzer 12mm</description>
+<circle x="0" y="0" radius="6" width="0.127" layer="21"/>
+<pad name="+" x="-3" y="0" drill="0.8" diameter="1.4" shape="square"/>
+<pad name="-" x="3" y="0" drill="0.8" diameter="1.4"/>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="51"/>
+<text x="-4" y="7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4" y="-8" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1" y1="2" x2="1" y2="2" width="0.127" layer="21"/>
+<wire x1="0" y1="3" x2="0" y2="1" width="0.127" layer="21"/>
+</package>
+<package name="EC11_ROTARY_ENCODER" library_version="3" use_placeholder="yes">
+<description>EC11 Rotary Encoder 12.5x12.5mm</description>
+<wire x1="-6.25" y1="6.25" x2="6.25" y2="6.25" width="0.127" layer="21"/>
+<wire x1="6.25" y1="6.25" x2="6.25" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-6.25" x2="-6.25" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-6.25" x2="-6.25" y2="6.25" width="0.127" layer="21"/>
+<pad name="S1" x="2.58" y="7.5" drill="0.8" diameter="1.4"/>
+<pad name="KEY" x="-2.54" y="7.5" drill="0.8" diameter="1.4"/>
+<pad name="S2" x="-0.04" y="7.5" drill="0.8" diameter="1.4"/>
+<pad name="VCC" x="-5.04" y="7.5" drill="0.8" diameter="1.4"/>
+<pad name="GND" x="5.0146" y="7.5" drill="0.8" diameter="1.4"/>
+<circle x="0" y="0" radius="3.5" width="0.127" layer="51"/>
+<text x="-5" y="9" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5" y="-10" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="6" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="12.5" width="0.127" layer="21"/>
+</package>
+<package name="TO92-EBC-OVAL" use_placeholder="yes">
+<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
+grid 5.08 mm</description>
+<wire x1="-2.095" y1="-2.921" x2="2.095" y2="-2.921" width="0.127" layer="21"/>
+<wire x1="-2.413" y1="-0.1341" x2="2.413" y2="-0.1341" width="0.127" layer="21" curve="-129.583345" cap="flat"/>
+<wire x1="1.136" y1="-1.397" x2="-1.136" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="-2.413" y1="-0.1341" x2="-2.413" y2="-2.4059" width="0.127" layer="51" curve="50.416655" cap="flat"/>
+<wire x1="-1.404" y1="-1.397" x2="-2.664" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="-2.4135" y1="-2.4059" x2="-2.095" y2="-2.921" width="0.127" layer="21" curve="13.038528" cap="flat"/>
+<wire x1="-1.136" y1="-1.397" x2="-1.404" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="2.413" y1="-2.4059" x2="2.413" y2="-0.1341" width="0.127" layer="51" curve="50.416655" cap="flat"/>
+<wire x1="2.664" y1="-1.397" x2="1.404" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="1.404" y1="-1.397" x2="1.136" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="2.095" y1="-2.921" x2="2.4247" y2="-2.3818" width="0.127" layer="21" curve="13.609443" cap="flat"/>
+<pad name="E" x="-2.54" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
+<pad name="C" x="2.54" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
+<pad name="B" x="0" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
+<text x="-2.54" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-4.572" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="AXIAL-0.1" use_placeholder="yes">
+<description>&lt;h3&gt;AXIAL-0.1&lt;/h3&gt;
+&lt;p&gt;Commonly used for 1/4W through-hole resistors. 0.1" pitch between holes.&lt;/p&gt;</description>
+<wire x1="0" y1="-0.762" x2="0" y2="0" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="0.254" y1="0" x2="0" y2="0" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="-0.254" y2="0" width="0.2032" layer="21"/>
+<pad name="P$1" x="-1.27" y="0" drill="0.9" diameter="1.8796"/>
+<pad name="P$2" x="1.27" y="0" drill="0.9" diameter="1.8796"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="AXIAL-0.1-KIT" use_placeholder="yes">
+<description>&lt;h3&gt;AXIAL-0.1-KIT&lt;/h3&gt;
+&lt;p&gt;Commonly used for 1/4W through-hole resistors. 0.1" pitch between holes.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of the AXIAL-0.1 package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.&lt;/p&gt;</description>
+<wire x1="0" y1="-0.762" x2="0" y2="0" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="0.254" y1="0" x2="0" y2="0" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="-0.254" y2="0" width="0.2032" layer="21"/>
+<pad name="P$1" x="-1.27" y="0" drill="0.9" diameter="1.8796" solderMask="off"/>
+<pad name="P$2" x="1.27" y="0" drill="0.9" diameter="1.8796" solderMask="off"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<circle x="-1.27" y="0" radius="0.4572" width="0" layer="29"/>
+<circle x="-1.27" y="0" radius="1.016" width="0" layer="30"/>
+<circle x="1.27" y="0" radius="1.016" width="0" layer="30"/>
+<circle x="-1.27" y="0" radius="0.4572" width="0" layer="29"/>
+<circle x="1.27" y="0" radius="0.4572" width="0" layer="29"/>
+</package>
+<package name="0402" use_placeholder="yes">
+<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
+<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
+<wire x1="-1.2" y1="0.65" x2="1.2" y2="0.65" width="0.0508" layer="39"/>
+<wire x1="1.2" y1="0.65" x2="1.2" y2="-0.65" width="0.0508" layer="39"/>
+<wire x1="1.2" y1="-0.65" x2="-1.2" y2="-0.65" width="0.0508" layer="39"/>
+<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="0.65" width="0.0508" layer="39"/>
+<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="0603" urn="urn:adsk.eagle:footprint:39615/1" library_version="1" use_placeholder="yes">
+<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="0402-TIGHT" use_placeholder="yes">
+<smd name="1" x="-0.5" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="0.5" y="0" dx="0.6" dy="0.6" layer="1"/>
+<text x="0" y="0.562" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.562" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.002540625" layer="51"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.002540625" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.002540625" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.002540625" layer="51"/>
+<rectangle x1="-0.5" y1="-0.25" x2="-0.3" y2="0.25" layer="51"/>
+<rectangle x1="0.3" y1="-0.25" x2="0.5" y2="0.25" layer="51" rot="R180"/>
+<wire x1="0.9262" y1="0.4262" x2="-0.9262" y2="0.4262" width="0.05" layer="39"/>
+<wire x1="-0.9262" y1="0.4262" x2="-0.9262" y2="-0.4262" width="0.05" layer="39"/>
+<wire x1="-0.9262" y1="-0.4262" x2="0.9262" y2="-0.4262" width="0.05" layer="39"/>
+<wire x1="0.9262" y1="-0.4262" x2="0.9262" y2="0.4262" width="0.05" layer="39"/>
+</package>
+<package name="AXIAL-0.3" use_placeholder="yes">
+<description>&lt;h3&gt;AXIAL-0.3&lt;/h3&gt;
+&lt;p&gt;Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;/p&gt;</description>
+<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
+<pad name="P$1" x="-3.81" y="0" drill="0.9" diameter="1.8796"/>
+<pad name="P$2" x="3.81" y="0" drill="0.9" diameter="1.8796"/>
+<text x="0" y="1.016" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="AXIAL-0.3-KIT" use_placeholder="yes">
+<description>&lt;h3&gt;AXIAL-0.3-KIT&lt;/h3&gt;
+&lt;p&gt;Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of the AXIAL-0.3 package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.&lt;/p&gt;</description>
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="0" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.254" layer="21"/>
+<pad name="P$1" x="-3.81" y="0" drill="1.016" diameter="2.032" solderMask="off"/>
+<pad name="P$2" x="3.81" y="0" drill="1.016" diameter="2.032" solderMask="off"/>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygonshape width="0.127" layer="30">
+<polygonoutlineobjects>
+<vertex x="4.014925" y="-0.991628125"/>
+<vertex x="4.203365625" y="-0.936725"/>
+<vertex x="4.37746875" y="-0.846103125"/>
+<vertex x="4.530540625" y="-0.72325"/>
+<vertex x="4.6567" y="-0.5728875"/>
+<vertex x="4.751084375" y="-0.40079375"/>
+<vertex x="4.810075" y="-0.21359375"/>
+<vertex x="4.831353125" y="-0.018953125"/>
+<vertex x="4.8183125" y="0.159965625"/>
+<vertex x="4.7744625" y="0.33368125"/>
+<vertex x="4.701109375" y="0.497140625"/>
+<vertex x="4.600484375" y="0.64538125"/>
+<vertex x="4.47565" y="0.773896875"/>
+<vertex x="4.33039375" y="0.878784375"/>
+<vertex x="4.16913125" y="0.95685"/>
+<vertex x="3.9967625" y="1.00573125"/>
+<vertex x="3.817684375" y="1.024021875"/>
+<vertex x="3.638578125" y="1.0062125"/>
+<vertex x="3.46609375" y="0.957796875"/>
+<vertex x="3.30464375" y="0.880159375"/>
+<vertex x="3.159128125" y="0.775665625"/>
+<vertex x="3.033971875" y="0.6474875"/>
+<vertex x="2.932978125" y="0.499521875"/>
+<vertex x="2.859215625" y="0.3362625"/>
+<vertex x="2.814928125" y="0.162671875"/>
+<vertex x="2.80143125" y="-0.016359375"/>
+<vertex x="2.82335625" y="-0.212075"/>
+<vertex x="2.88313125" y="-0.400046875"/>
+<vertex x="2.97843125" y="-0.572746875"/>
+<vertex x="3.105590625" y="-0.723534375"/>
+<vertex x="3.259725" y="-0.846615625"/>
+<vertex x="3.434909375" y="-0.937265625"/>
+<vertex x="3.624415625" y="-0.99199375"/>
+<vertex x="3.820175" y="-1.008634375"/>
+</polygonoutlineobjects>
+<polygonoutlinesegments>
+<vertex x="4.014925" y="-0.991628125"/>
+<vertex x="4.203365625" y="-0.936725"/>
+<vertex x="4.37746875" y="-0.846103125"/>
+<vertex x="4.530540625" y="-0.72325"/>
+<vertex x="4.6567" y="-0.5728875"/>
+<vertex x="4.751084375" y="-0.40079375"/>
+<vertex x="4.810075" y="-0.21359375"/>
+<vertex x="4.831353125" y="-0.018953125"/>
+<vertex x="4.8183125" y="0.159965625"/>
+<vertex x="4.7744625" y="0.33368125"/>
+<vertex x="4.701109375" y="0.497140625"/>
+<vertex x="4.600484375" y="0.64538125"/>
+<vertex x="4.47565" y="0.773896875"/>
+<vertex x="4.33039375" y="0.878784375"/>
+<vertex x="4.16913125" y="0.95685"/>
+<vertex x="3.9967625" y="1.00573125"/>
+<vertex x="3.817684375" y="1.024021875"/>
+<vertex x="3.638578125" y="1.0062125"/>
+<vertex x="3.46609375" y="0.957796875"/>
+<vertex x="3.30464375" y="0.880159375"/>
+<vertex x="3.159128125" y="0.775665625"/>
+<vertex x="3.033971875" y="0.6474875"/>
+<vertex x="2.932978125" y="0.499521875"/>
+<vertex x="2.859215625" y="0.3362625"/>
+<vertex x="2.814928125" y="0.162671875"/>
+<vertex x="2.80143125" y="-0.016359375"/>
+<vertex x="2.82335625" y="-0.212075"/>
+<vertex x="2.88313125" y="-0.400046875"/>
+<vertex x="2.97843125" y="-0.572746875"/>
+<vertex x="3.105590625" y="-0.723534375"/>
+<vertex x="3.259725" y="-0.846615625"/>
+<vertex x="3.434909375" y="-0.937265625"/>
+<vertex x="3.624415625" y="-0.99199375"/>
+<vertex x="3.820175" y="-1.008634375"/>
+<vertex x="4.014925" y="-0.991628125"/>
+</polygonoutlinesegments>
+</polygonshape>
+<polygonshape width="0.127" layer="29">
+<polygonoutlineobjects>
+<vertex x="3.928878125" y="-0.48918125"/>
+<vertex x="4.03531875" y="-0.452959375"/>
+<vertex x="4.131025" y="-0.3939625"/>
+<vertex x="4.21120625" y="-0.315146875"/>
+<vertex x="4.27183125" y="-0.220459375"/>
+<vertex x="4.30986875" y="-0.114653125"/>
+<vertex x="4.323365625" y="-0.003309375"/>
+<vertex x="4.312453125" y="0.110875"/>
+<vertex x="4.27631875" y="0.220034375"/>
+<vertex x="4.216796875" y="0.318409375"/>
+<vertex x="4.13688125" y="0.401071875"/>
+<vertex x="4.040571875" y="0.463884375"/>
+<vertex x="3.932703125" y="0.5036875"/>
+<vertex x="3.817340625" y="0.518665625"/>
+<vertex x="3.700665625" y="0.502559375"/>
+<vertex x="3.591765625" y="0.46136875"/>
+<vertex x="3.494759375" y="0.396978125"/>
+<vertex x="3.414515625" y="0.31261875"/>
+<vertex x="3.355053125" y="0.212515625"/>
+<vertex x="3.319359375" y="0.10169375"/>
+<vertex x="3.309221875" y="-0.014240625"/>
+<vertex x="3.3242875" y="-0.12476875"/>
+<vertex x="3.363590625" y="-0.229221875"/>
+<vertex x="3.425159375" y="-0.322309375"/>
+<vertex x="3.505896875" y="-0.399359375"/>
+<vertex x="3.60175625" y="-0.456509375"/>
+<vertex x="3.707934375" y="-0.49089375"/>
+<vertex x="3.818071875" y="-0.50069375"/>
+</polygonoutlineobjects>
+<polygonoutlinesegments>
+<vertex x="3.928878125" y="-0.48918125"/>
+<vertex x="4.03531875" y="-0.452959375"/>
+<vertex x="4.131025" y="-0.3939625"/>
+<vertex x="4.21120625" y="-0.315146875"/>
+<vertex x="4.27183125" y="-0.220459375"/>
+<vertex x="4.30986875" y="-0.114653125"/>
+<vertex x="4.323365625" y="-0.003309375"/>
+<vertex x="4.312453125" y="0.110875"/>
+<vertex x="4.27631875" y="0.220034375"/>
+<vertex x="4.216796875" y="0.318409375"/>
+<vertex x="4.13688125" y="0.401071875"/>
+<vertex x="4.040571875" y="0.463884375"/>
+<vertex x="3.932703125" y="0.5036875"/>
+<vertex x="3.817340625" y="0.518665625"/>
+<vertex x="3.700665625" y="0.502559375"/>
+<vertex x="3.591765625" y="0.46136875"/>
+<vertex x="3.494759375" y="0.396978125"/>
+<vertex x="3.414515625" y="0.31261875"/>
+<vertex x="3.355053125" y="0.212515625"/>
+<vertex x="3.319359375" y="0.10169375"/>
+<vertex x="3.309221875" y="-0.014240625"/>
+<vertex x="3.3242875" y="-0.12476875"/>
+<vertex x="3.363590625" y="-0.229221875"/>
+<vertex x="3.425159375" y="-0.322309375"/>
+<vertex x="3.505896875" y="-0.399359375"/>
+<vertex x="3.60175625" y="-0.456509375"/>
+<vertex x="3.707934375" y="-0.49089375"/>
+<vertex x="3.818071875" y="-0.50069375"/>
+<vertex x="3.928878125" y="-0.48918125"/>
+</polygonoutlinesegments>
+</polygonshape>
+<polygonshape width="0.127" layer="30">
+<polygonoutlineobjects>
+<vertex x="-3.612675" y="-0.999228125"/>
+<vertex x="-3.424234375" y="-0.944325"/>
+<vertex x="-3.25013125" y="-0.853703125"/>
+<vertex x="-3.097059375" y="-0.73085"/>
+<vertex x="-2.9709" y="-0.5804875"/>
+<vertex x="-2.876515625" y="-0.40839375"/>
+<vertex x="-2.817525" y="-0.22119375"/>
+<vertex x="-2.796246875" y="-0.026553125"/>
+<vertex x="-2.8092875" y="0.152365625"/>
+<vertex x="-2.8531375" y="0.32608125"/>
+<vertex x="-2.926490625" y="0.489540625"/>
+<vertex x="-3.027115625" y="0.63778125"/>
+<vertex x="-3.15195" y="0.766296875"/>
+<vertex x="-3.29720625" y="0.871184375"/>
+<vertex x="-3.45846875" y="0.94925"/>
+<vertex x="-3.6308375" y="0.99813125"/>
+<vertex x="-3.809915625" y="1.016421875"/>
+<vertex x="-3.989021875" y="0.9986125"/>
+<vertex x="-4.16150625" y="0.950196875"/>
+<vertex x="-4.32295625" y="0.872559375"/>
+<vertex x="-4.468471875" y="0.768065625"/>
+<vertex x="-4.593628125" y="0.6398875"/>
+<vertex x="-4.694621875" y="0.491921875"/>
+<vertex x="-4.768384375" y="0.3286625"/>
+<vertex x="-4.812671875" y="0.155071875"/>
+<vertex x="-4.82616875" y="-0.023959375"/>
+<vertex x="-4.80424375" y="-0.219675"/>
+<vertex x="-4.74446875" y="-0.407646875"/>
+<vertex x="-4.64916875" y="-0.580346875"/>
+<vertex x="-4.522009375" y="-0.731134375"/>
+<vertex x="-4.367875" y="-0.854215625"/>
+<vertex x="-4.192690625" y="-0.944865625"/>
+<vertex x="-4.003184375" y="-0.99959375"/>
+<vertex x="-3.807425" y="-1.016234375"/>
+</polygonoutlineobjects>
+<polygonoutlinesegments>
+<vertex x="-3.612675" y="-0.999228125"/>
+<vertex x="-3.424234375" y="-0.944325"/>
+<vertex x="-3.25013125" y="-0.853703125"/>
+<vertex x="-3.097059375" y="-0.73085"/>
+<vertex x="-2.9709" y="-0.5804875"/>
+<vertex x="-2.876515625" y="-0.40839375"/>
+<vertex x="-2.817525" y="-0.22119375"/>
+<vertex x="-2.796246875" y="-0.026553125"/>
+<vertex x="-2.8092875" y="0.152365625"/>
+<vertex x="-2.8531375" y="0.32608125"/>
+<vertex x="-2.926490625" y="0.489540625"/>
+<vertex x="-3.027115625" y="0.63778125"/>
+<vertex x="-3.15195" y="0.766296875"/>
+<vertex x="-3.29720625" y="0.871184375"/>
+<vertex x="-3.45846875" y="0.94925"/>
+<vertex x="-3.6308375" y="0.99813125"/>
+<vertex x="-3.809915625" y="1.016421875"/>
+<vertex x="-3.989021875" y="0.9986125"/>
+<vertex x="-4.16150625" y="0.950196875"/>
+<vertex x="-4.32295625" y="0.872559375"/>
+<vertex x="-4.468471875" y="0.768065625"/>
+<vertex x="-4.593628125" y="0.6398875"/>
+<vertex x="-4.694621875" y="0.491921875"/>
+<vertex x="-4.768384375" y="0.3286625"/>
+<vertex x="-4.812671875" y="0.155071875"/>
+<vertex x="-4.82616875" y="-0.023959375"/>
+<vertex x="-4.80424375" y="-0.219675"/>
+<vertex x="-4.74446875" y="-0.407646875"/>
+<vertex x="-4.64916875" y="-0.580346875"/>
+<vertex x="-4.522009375" y="-0.731134375"/>
+<vertex x="-4.367875" y="-0.854215625"/>
+<vertex x="-4.192690625" y="-0.944865625"/>
+<vertex x="-4.003184375" y="-0.99959375"/>
+<vertex x="-3.807425" y="-1.016234375"/>
+<vertex x="-3.612675" y="-0.999228125"/>
+</polygonoutlinesegments>
+</polygonshape>
+<polygonshape width="0.127" layer="29">
+<polygonoutlineobjects>
+<vertex x="-3.698721875" y="-0.49678125"/>
+<vertex x="-3.59228125" y="-0.460559375"/>
+<vertex x="-3.496575" y="-0.4015625"/>
+<vertex x="-3.41639375" y="-0.322746875"/>
+<vertex x="-3.35576875" y="-0.228059375"/>
+<vertex x="-3.31773125" y="-0.122253125"/>
+<vertex x="-3.304234375" y="-0.010909375"/>
+<vertex x="-3.315146875" y="0.103275"/>
+<vertex x="-3.35128125" y="0.212434375"/>
+<vertex x="-3.410803125" y="0.310809375"/>
+<vertex x="-3.49071875" y="0.393471875"/>
+<vertex x="-3.587028125" y="0.456284375"/>
+<vertex x="-3.694896875" y="0.4960875"/>
+<vertex x="-3.810259375" y="0.511065625"/>
+<vertex x="-3.926934375" y="0.494959375"/>
+<vertex x="-4.035834375" y="0.45376875"/>
+<vertex x="-4.132840625" y="0.389378125"/>
+<vertex x="-4.213084375" y="0.30501875"/>
+<vertex x="-4.272546875" y="0.204915625"/>
+<vertex x="-4.308240625" y="0.09409375"/>
+<vertex x="-4.318378125" y="-0.021840625"/>
+<vertex x="-4.3033125" y="-0.13236875"/>
+<vertex x="-4.264009375" y="-0.236821875"/>
+<vertex x="-4.202440625" y="-0.329909375"/>
+<vertex x="-4.121703125" y="-0.406959375"/>
+<vertex x="-4.02584375" y="-0.464109375"/>
+<vertex x="-3.919665625" y="-0.49849375"/>
+<vertex x="-3.809528125" y="-0.50829375"/>
+</polygonoutlineobjects>
+<polygonoutlinesegments>
+<vertex x="-3.698721875" y="-0.49678125"/>
+<vertex x="-3.59228125" y="-0.460559375"/>
+<vertex x="-3.496575" y="-0.4015625"/>
+<vertex x="-3.41639375" y="-0.322746875"/>
+<vertex x="-3.35576875" y="-0.228059375"/>
+<vertex x="-3.31773125" y="-0.122253125"/>
+<vertex x="-3.304234375" y="-0.010909375"/>
+<vertex x="-3.315146875" y="0.103275"/>
+<vertex x="-3.35128125" y="0.212434375"/>
+<vertex x="-3.410803125" y="0.310809375"/>
+<vertex x="-3.49071875" y="0.393471875"/>
+<vertex x="-3.587028125" y="0.456284375"/>
+<vertex x="-3.694896875" y="0.4960875"/>
+<vertex x="-3.810259375" y="0.511065625"/>
+<vertex x="-3.926934375" y="0.494959375"/>
+<vertex x="-4.035834375" y="0.45376875"/>
+<vertex x="-4.132840625" y="0.389378125"/>
+<vertex x="-4.213084375" y="0.30501875"/>
+<vertex x="-4.272546875" y="0.204915625"/>
+<vertex x="-4.308240625" y="0.09409375"/>
+<vertex x="-4.318378125" y="-0.021840625"/>
+<vertex x="-4.3033125" y="-0.13236875"/>
+<vertex x="-4.264009375" y="-0.236821875"/>
+<vertex x="-4.202440625" y="-0.329909375"/>
+<vertex x="-4.121703125" y="-0.406959375"/>
+<vertex x="-4.02584375" y="-0.464109375"/>
+<vertex x="-3.919665625" y="-0.49849375"/>
+<vertex x="-3.809528125" y="-0.50829375"/>
+<vertex x="-3.698721875" y="-0.49678125"/>
+</polygonoutlinesegments>
+</polygonshape>
+</package>
+<package name="I2C_OLED_PACKAGE" library_version="12" use_placeholder="yes">
+<wire x1="7.73" y1="24.635" x2="7.73" y2="23.365" width="0.2032" layer="21"/>
+<wire x1="17.89" y1="24.635" x2="17.89" y2="23.365" width="0.2032" layer="21"/>
+<pad name="1" x="9" y="24" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<pad name="3" x="14.08" y="24" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<pad name="4" x="16.62" y="24" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<pad name="2" x="11.54" y="24" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<text x="2.0338" y="19.8438" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="24.24" y="18.92" size="1.27" layer="27" font="vector" align="bottom-right">&gt;VALUE</text>
+<rectangle x1="16.366" y1="23.746" x2="16.874" y2="24.254" layer="51"/>
+<rectangle x1="13.826" y1="23.746" x2="14.334" y2="24.254" layer="51"/>
+<rectangle x1="11.286" y1="23.746" x2="11.794" y2="24.254" layer="51"/>
+<rectangle x1="8.746" y1="23.746" x2="9.254" y2="24.254" layer="51"/>
+<wire x1="24.51" y1="-0.4" x2="0.84" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.84" y1="-0.4" x2="-0.43" y2="0.87" width="0.127" layer="21" curve="-90"/>
+<wire x1="-0.43" y1="0.87" x2="-0.43" y2="26.54" width="0.127" layer="21"/>
+<wire x1="-0.43" y1="26.54" x2="0.84" y2="27.81" width="0.127" layer="21" curve="-90"/>
+<wire x1="25.78" y1="26.54" x2="25.78" y2="0.87" width="0.127" layer="21"/>
+<wire x1="25.78" y1="0.87" x2="24.51" y2="-0.4" width="0.127" layer="21" curve="-90"/>
+<wire x1="25.78" y1="26.54" x2="24.51" y2="27.81" width="0.127" layer="21" curve="90"/>
+<wire x1="24.51" y1="27.81" x2="0.84" y2="27.81" width="0.127" layer="21"/>
+<text x="3.38" y="4.68" size="2.54" layer="21" font="vector">0.96" OLED</text>
+</package>
+<package name="5-534237-8" urn="urn:adsk.eagle:footprint:10989882/1" library_version="3" use_placeholder="yes">
+<wire x1="-12.7" y1="1.78" x2="12.7" y2="1.78" width="0.1524" layer="51"/>
+<wire x1="12.7" y1="1.78" x2="12.7" y2="-1.78" width="0.1524" layer="51"/>
+<wire x1="12.7" y1="-1.78" x2="-12.7" y2="-1.78" width="0.1524" layer="51"/>
+<wire x1="-12.7" y1="-1.78" x2="-12.7" y2="1.78" width="0.1524" layer="51"/>
+<wire x1="-12.7" y1="1.78" x2="12.7" y2="1.78" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="1.78" x2="12.7" y2="-1.78" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="-1.78" x2="-12.7" y2="-1.78" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="-1.78" x2="-12.7" y2="1.78" width="0.1524" layer="21"/>
+<wire x1="-12.95" y1="2.03" x2="12.95" y2="2.03" width="0.05" layer="39"/>
+<wire x1="12.95" y1="2.03" x2="12.95" y2="-2.03" width="0.05" layer="39"/>
+<wire x1="12.95" y1="-2.03" x2="-12.95" y2="-2.03" width="0.05" layer="39"/>
+<wire x1="-12.95" y1="-2.03" x2="-12.95" y2="2.03" width="0.05" layer="39"/>
+<circle x="-13.381" y="0" radius="0.1" width="0.2" layer="21"/>
+<text x="-12.75008125" y="2.250140625" size="1.27008125" layer="25">&gt;NAME</text>
+<text x="-13.0031" y="-3.506909375" size="1.272509375" layer="27">&gt;VALUE</text>
+<pad name="1" x="-11.43" y="0" drill="0.88" shape="square"/>
+<pad name="2" x="-8.89" y="0" drill="0.88"/>
+<pad name="3" x="-6.35" y="0" drill="0.88"/>
+<pad name="4" x="-3.81" y="0" drill="0.88"/>
+<pad name="5" x="-1.27" y="0" drill="0.88"/>
+<pad name="6" x="1.27" y="0" drill="0.88"/>
+<pad name="7" x="3.81" y="0" drill="0.88"/>
+<pad name="8" x="6.35" y="0" drill="0.88"/>
+<pad name="9" x="8.89" y="0" drill="0.88"/>
+<pad name="10" x="11.43" y="0" drill="0.88"/>
+</package>
+<package name="SODFL2513X70" urn="urn:adsk.eagle:footprint:48498300/1" library_version="19" use_placeholder="yes">
+<description>SODFL, 2.50 mm span, 1.90 X 1.30 X 0.70 mm body
+&lt;p&gt;SODFL package with 2.50 mm span with body size 1.90 X 1.30 X 0.70 mm&lt;/p&gt;</description>
+<wire x1="1" y1="0.7009" x2="-1.8717" y2="0.7009" width="0.12" layer="21"/>
+<wire x1="-1.8717" y1="0.7009" x2="-1.8717" y2="-0.7009" width="0.12" layer="21"/>
+<wire x1="-1.8717" y1="-0.7009" x2="1" y2="-0.7009" width="0.12" layer="21"/>
+<wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.12" layer="51"/>
+<wire x1="-1" y1="-0.7" x2="-1" y2="0.7" width="0.12" layer="51"/>
+<wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.12" layer="51"/>
+<wire x1="1" y1="0.7" x2="1" y2="-0.7" width="0.12" layer="51"/>
+<smd name="1" x="-1.065" y="0" dx="0.9854" dy="0.7739" layer="1"/>
+<smd name="2" x="1.065" y="0" dx="0.9854" dy="0.7739" layer="1"/>
+<text x="0" y="1.27" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="DIOMELF3516" urn="urn:adsk.eagle:footprint:16378178/4" library_version="19" use_placeholder="yes">
+<description>MELF, 3.50 mm length, 1.65 mm diameter
+&lt;p&gt;MELF Diode package with 3.50 mm length and 1.65 mm diameter&lt;/p&gt;</description>
+<wire x1="0.983" y1="1.239" x2="-2.5717" y2="1.239" width="0.12" layer="21"/>
+<wire x1="-2.5717" y1="1.239" x2="-2.5717" y2="-1.239" width="0.12" layer="21"/>
+<wire x1="-2.5717" y1="-1.239" x2="0.983" y2="-1.239" width="0.12" layer="21"/>
+<wire x1="1.85" y1="-0.85" x2="-1.85" y2="-0.85" width="0.12" layer="51"/>
+<wire x1="-1.85" y1="-0.85" x2="-1.85" y2="0.85" width="0.12" layer="51"/>
+<wire x1="-1.85" y1="0.85" x2="1.85" y2="0.85" width="0.12" layer="51"/>
+<wire x1="1.85" y1="0.85" x2="1.85" y2="-0.85" width="0.12" layer="51"/>
+<smd name="1" x="-1.6203" y="0" dx="1.2747" dy="1.85" layer="1"/>
+<smd name="2" x="1.6203" y="0" dx="1.2747" dy="1.85" layer="1"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+</package>
+<package name="SODFL5226X110" urn="urn:adsk.eagle:footprint:48498292/1" library_version="19" use_placeholder="yes">
+<description>SODFL, 5.20 mm span, 4.28 X 2.60 X 1.10 mm body
+&lt;p&gt;SODFL package with 5.20 mm span with body size 4.28 X 2.60 X 1.10 mm&lt;/p&gt;</description>
+<wire x1="2.3" y1="1.475" x2="-3.3179" y2="1.475" width="0.12" layer="21"/>
+<wire x1="-3.3179" y1="1.475" x2="-3.3179" y2="-1.475" width="0.12" layer="21"/>
+<wire x1="-3.3179" y1="-1.475" x2="2.3" y2="-1.475" width="0.12" layer="21"/>
+<wire x1="2.3" y1="-1.475" x2="-2.3" y2="-1.475" width="0.12" layer="51"/>
+<wire x1="-2.3" y1="-1.475" x2="-2.3" y2="1.475" width="0.12" layer="51"/>
+<wire x1="-2.3" y1="1.475" x2="2.3" y2="1.475" width="0.12" layer="51"/>
+<wire x1="2.3" y1="1.475" x2="2.3" y2="-1.475" width="0.12" layer="51"/>
+<smd name="1" x="-2.0722" y="0" dx="1.8634" dy="1.6653" layer="1"/>
+<smd name="2" x="2.0722" y="0" dx="1.8634" dy="1.6653" layer="1"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+</package>
+<package name="SODFL2513X75" urn="urn:adsk.eagle:footprint:48498297/1" library_version="19" use_placeholder="yes">
+<description>SODFL, 2.50 mm span, 2.20 X 1.30 X 0.75 mm body
+&lt;p&gt;SODFL package with 2.50 mm span with body size 2.20 X 1.30 X 0.75 mm&lt;/p&gt;</description>
+<wire x1="1.15" y1="0.7009" x2="-1.8717" y2="0.7009" width="0.12" layer="21"/>
+<wire x1="-1.8717" y1="0.7009" x2="-1.8717" y2="-0.7009" width="0.12" layer="21"/>
+<wire x1="-1.8717" y1="-0.7009" x2="1.15" y2="-0.7009" width="0.12" layer="21"/>
+<wire x1="1.15" y1="-0.7" x2="-1.15" y2="-0.7" width="0.12" layer="51"/>
+<wire x1="-1.15" y1="-0.7" x2="-1.15" y2="0.7" width="0.12" layer="51"/>
+<wire x1="-1.15" y1="0.7" x2="1.15" y2="0.7" width="0.12" layer="51"/>
+<wire x1="1.15" y1="0.7" x2="1.15" y2="-0.7" width="0.12" layer="51"/>
+<smd name="1" x="-0.7394" y="0" dx="1.6364" dy="1.003" layer="1"/>
+<smd name="2" x="0.7394" y="0" dx="1.0027" dy="0.7739" layer="1"/>
+<text x="0" y="1.27" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SODFL3718X140" urn="urn:adsk.eagle:footprint:48498290/1" library_version="19" use_placeholder="yes">
+<description>SODFL, 3.70 mm span, 2.80 X 1.80 X 1.40 mm body
+&lt;p&gt;SODFL package with 3.70 mm span with body size 2.80 X 1.80 X 1.40 mm&lt;/p&gt;</description>
+<wire x1="1.45" y1="0.9946" x2="-2.4717" y2="0.9946" width="0.12" layer="21"/>
+<wire x1="-2.4717" y1="0.9946" x2="-2.4717" y2="-0.9946" width="0.12" layer="21"/>
+<wire x1="-2.4717" y1="-0.9946" x2="1.45" y2="-0.9946" width="0.12" layer="21"/>
+<wire x1="1.45" y1="-0.95" x2="-1.45" y2="-0.95" width="0.12" layer="51"/>
+<wire x1="-1.45" y1="-0.95" x2="-1.45" y2="0.95" width="0.12" layer="51"/>
+<wire x1="-1.45" y1="0.95" x2="1.45" y2="0.95" width="0.12" layer="51"/>
+<wire x1="1.45" y1="0.95" x2="1.45" y2="-0.95" width="0.12" layer="51"/>
+<smd name="1" x="-1.5233" y="0" dx="1.2688" dy="1.3612" layer="1"/>
+<smd name="2" x="1.5233" y="0" dx="1.2688" dy="1.3612" layer="1"/>
+<text x="0" y="1.27" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SOD6236X265" urn="urn:adsk.eagle:footprint:48498291/1" library_version="19" use_placeholder="yes">
+<description>SOD, 6.22 mm span, 4.33 X 3.63 X 2.65 mm body
+&lt;p&gt;SOD package with 6.22 mm span with body size 4.33 X 3.63 X 2.65 mm&lt;/p&gt;</description>
+<wire x1="2.3" y1="1.975" x2="-3.9196" y2="1.975" width="0.12" layer="21"/>
+<wire x1="-3.9196" y1="1.975" x2="-3.9196" y2="-1.975" width="0.12" layer="21"/>
+<wire x1="-3.9196" y1="-1.975" x2="2.3" y2="-1.975" width="0.12" layer="21"/>
+<wire x1="2.3" y1="-1.975" x2="-2.3" y2="-1.975" width="0.12" layer="51"/>
+<wire x1="-2.3" y1="-1.975" x2="-2.3" y2="1.975" width="0.12" layer="51"/>
+<wire x1="-2.3" y1="1.975" x2="2.3" y2="1.975" width="0.12" layer="51"/>
+<wire x1="2.3" y1="1.975" x2="2.3" y2="-1.975" width="0.12" layer="51"/>
+<smd name="1" x="-2.7561" y="0" dx="1.699" dy="2.2839" layer="1"/>
+<smd name="2" x="2.7561" y="0" dx="1.699" dy="2.2839" layer="1"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SODFL3718X115" urn="urn:adsk.eagle:footprint:48498299/1" library_version="19" use_placeholder="yes">
+<description>SODFL, 3.70 mm span, 2.80 X 1.80 X 1.15 mm body
+&lt;p&gt;SODFL package with 3.70 mm span with body size 2.80 X 1.80 X 1.15 mm&lt;/p&gt;</description>
+<wire x1="1.45" y1="0.9946" x2="-2.4717" y2="0.9946" width="0.12" layer="21"/>
+<wire x1="-2.4717" y1="0.9946" x2="-2.4717" y2="-0.9946" width="0.12" layer="21"/>
+<wire x1="-2.4717" y1="-0.9946" x2="1.45" y2="-0.9946" width="0.12" layer="21"/>
+<wire x1="1.45" y1="-0.95" x2="-1.45" y2="-0.95" width="0.12" layer="51"/>
+<wire x1="-1.45" y1="-0.95" x2="-1.45" y2="0.95" width="0.12" layer="51"/>
+<wire x1="-1.45" y1="0.95" x2="1.45" y2="0.95" width="0.12" layer="51"/>
+<wire x1="1.45" y1="0.95" x2="1.45" y2="-0.95" width="0.12" layer="51"/>
+<smd name="1" x="-1.6004" y="0" dx="1.1146" dy="1.3612" layer="1"/>
+<smd name="2" x="1.6004" y="0" dx="1.1146" dy="1.3612" layer="1"/>
+<text x="0" y="1.27" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SODFL1608X70" urn="urn:adsk.eagle:footprint:16378177/4" library_version="19" use_placeholder="yes">
+<description>SODFL, 1.60 mm span, 1.20 X 0.80 X 0.70 mm body
+&lt;p&gt;SODFL package with 1.60 mm span with body size 1.20 X 0.80 X 0.70 mm&lt;/p&gt;</description>
+<wire x1="0.65" y1="0.514" x2="-1.3786" y2="0.514" width="0.12" layer="21"/>
+<wire x1="-1.3786" y1="0.514" x2="-1.3786" y2="-0.514" width="0.12" layer="21"/>
+<wire x1="-1.3786" y1="-0.514" x2="0.65" y2="-0.514" width="0.12" layer="21"/>
+<wire x1="0.65" y1="-0.45" x2="-0.65" y2="-0.45" width="0.12" layer="51"/>
+<wire x1="-0.65" y1="-0.45" x2="-0.65" y2="0.45" width="0.12" layer="51"/>
+<wire x1="-0.65" y1="0.45" x2="0.65" y2="0.45" width="0.12" layer="51"/>
+<wire x1="0.65" y1="0.45" x2="0.65" y2="-0.45" width="0.12" layer="51"/>
+<smd name="1" x="-0.7956" y="0" dx="0.538" dy="0.4" layer="1"/>
+<smd name="2" x="0.7956" y="0" dx="0.538" dy="0.4" layer="1"/>
+<text x="0" y="1.27" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="DIOM7959X625N" urn="urn:adsk.eagle:footprint:16378174/4" library_version="19" use_placeholder="yes">
+<description>Molded Body, 7.95 X 5.90 X 6.25 mm body
+&lt;p&gt;Molded Body package with body size 7.95 X 5.90 X 6.25 mm&lt;/p&gt;</description>
+<wire x1="4.075" y1="3.125" x2="-4.8967" y2="3.125" width="0.12" layer="21"/>
+<wire x1="-4.8967" y1="3.125" x2="-4.8967" y2="-3.125" width="0.12" layer="21"/>
+<wire x1="-4.8967" y1="-3.125" x2="4.075" y2="-3.125" width="0.12" layer="21"/>
+<wire x1="4.075" y1="-3.125" x2="-4.075" y2="-3.125" width="0.12" layer="51"/>
+<wire x1="-4.075" y1="-3.125" x2="-4.075" y2="3.125" width="0.12" layer="51"/>
+<wire x1="-4.075" y1="3.125" x2="4.075" y2="3.125" width="0.12" layer="51"/>
+<wire x1="4.075" y1="3.125" x2="4.075" y2="-3.125" width="0.12" layer="51"/>
+<smd name="1" x="-3.4567" y="0" dx="2.2518" dy="3.1202" layer="1"/>
+<smd name="2" x="3.4567" y="0" dx="2.2518" dy="3.1202" layer="1"/>
+<text x="0" y="3.81" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SOD6126X350" urn="urn:adsk.eagle:footprint:48498298/1" library_version="19" use_placeholder="yes">
+<description>SOD, 6.10 mm span, 4.20 X 2.65 X 3.50 mm body
+&lt;p&gt;SOD package with 6.10 mm span with body size 4.20 X 2.65 X 3.50 mm&lt;/p&gt;</description>
+<wire x1="2.225" y1="1.65" x2="-3.9179" y2="1.65" width="0.12" layer="21"/>
+<wire x1="-3.9179" y1="1.65" x2="-3.9179" y2="-1.65" width="0.12" layer="21"/>
+<wire x1="-3.9179" y1="-1.65" x2="2.225" y2="-1.65" width="0.12" layer="21"/>
+<wire x1="2.225" y1="-1.65" x2="-2.225" y2="-1.65" width="0.12" layer="51"/>
+<wire x1="-2.225" y1="-1.65" x2="-2.225" y2="1.65" width="0.12" layer="51"/>
+<wire x1="-2.225" y1="1.65" x2="2.225" y2="1.65" width="0.12" layer="51"/>
+<wire x1="2.225" y1="1.65" x2="2.225" y2="-1.65" width="0.12" layer="51"/>
+<smd name="1" x="-2.7048" y="0" dx="1.7981" dy="1.7689" layer="1"/>
+<smd name="2" x="2.7048" y="0" dx="1.7981" dy="1.7689" layer="1"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+</package>
+<package name="DIOMELF5024" urn="urn:adsk.eagle:footprint:16378176/4" library_version="19" use_placeholder="yes">
+<description>MELF, 5.00 mm length, 2.49 mm diameter
+&lt;p&gt;MELF Diode package with 5.00 mm length and 2.49 mm diameter&lt;/p&gt;</description>
+<wire x1="1.8515" y1="1.659" x2="-3.3217" y2="1.659" width="0.12" layer="21"/>
+<wire x1="-3.3217" y1="1.659" x2="-3.3217" y2="-1.659" width="0.12" layer="21"/>
+<wire x1="-3.3217" y1="-1.659" x2="1.8515" y2="-1.659" width="0.12" layer="21"/>
+<wire x1="2.6" y1="-1.27" x2="-2.6" y2="-1.27" width="0.12" layer="51"/>
+<wire x1="-2.6" y1="-1.27" x2="-2.6" y2="1.27" width="0.12" layer="51"/>
+<wire x1="-2.6" y1="1.27" x2="2.6" y2="1.27" width="0.12" layer="51"/>
+<wire x1="2.6" y1="1.27" x2="2.6" y2="-1.27" width="0.12" layer="51"/>
+<smd name="1" x="-2.4296" y="0" dx="1.1561" dy="2.69" layer="1"/>
+<smd name="2" x="2.4296" y="0" dx="1.1561" dy="2.69" layer="1"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+</package>
+<package name="SODFL5336X110" urn="urn:adsk.eagle:footprint:48498301/1" library_version="19" use_placeholder="yes">
+<description>SODFL, 5.35 mm span, 4.33 X 3.63 X 1.10 mm body
+&lt;p&gt;SODFL package with 5.35 mm span with body size 4.33 X 3.63 X 1.10 mm&lt;/p&gt;</description>
+<wire x1="2.3" y1="1.975" x2="-3.3202" y2="1.975" width="0.12" layer="21"/>
+<wire x1="-3.3202" y1="1.975" x2="-3.3202" y2="-1.975" width="0.12" layer="21"/>
+<wire x1="-3.3202" y1="-1.975" x2="2.3" y2="-1.975" width="0.12" layer="21"/>
+<wire x1="2.3" y1="-1.975" x2="-2.3" y2="-1.975" width="0.12" layer="51"/>
+<wire x1="-2.3" y1="-1.975" x2="-2.3" y2="1.975" width="0.12" layer="51"/>
+<wire x1="-2.3" y1="1.975" x2="2.3" y2="1.975" width="0.12" layer="51"/>
+<wire x1="2.3" y1="1.975" x2="2.3" y2="-1.975" width="0.12" layer="51"/>
+<smd name="1" x="-2.1302" y="0" dx="1.752" dy="2.2239" layer="1"/>
+<smd name="2" x="2.1302" y="0" dx="1.752" dy="2.2239" layer="1"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SOD9959X265" urn="urn:adsk.eagle:footprint:48498296/1" library_version="19" use_placeholder="yes">
+<description>SOD, 9.93 mm span, 6.88 X 5.90 X 2.65 mm body
+&lt;p&gt;SOD package with 9.93 mm span with body size 6.88 X 5.90 X 2.65 mm&lt;/p&gt;</description>
+<wire x1="3.575" y1="3.125" x2="-5.7696" y2="3.125" width="0.12" layer="21"/>
+<wire x1="-5.7696" y1="3.125" x2="-5.7696" y2="-3.125" width="0.12" layer="21"/>
+<wire x1="-5.7696" y1="-3.125" x2="3.575" y2="-3.125" width="0.12" layer="21"/>
+<wire x1="3.575" y1="-3.125" x2="-3.575" y2="-3.125" width="0.12" layer="51"/>
+<wire x1="-3.575" y1="-3.125" x2="-3.575" y2="3.125" width="0.12" layer="51"/>
+<wire x1="-3.575" y1="3.125" x2="3.575" y2="3.125" width="0.12" layer="51"/>
+<wire x1="3.575" y1="3.125" x2="3.575" y2="-3.125" width="0.12" layer="51"/>
+<smd name="1" x="-4.5203" y="0" dx="1.8706" dy="3.2802" layer="1"/>
+<smd name="2" x="4.5203" y="0" dx="1.8706" dy="3.2802" layer="1"/>
+<text x="0" y="3.81" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SODFL4725X110" urn="urn:adsk.eagle:footprint:48498293/1" library_version="19" use_placeholder="yes">
+<description>SODFL, 4.70 mm span, 3.80 X 2.50 X 1.10 mm body
+&lt;p&gt;SODFL package with 4.70 mm span with body size 3.80 X 2.50 X 1.10 mm&lt;/p&gt;</description>
+<wire x1="2" y1="1.35" x2="-3.0192" y2="1.35" width="0.12" layer="21"/>
+<wire x1="-3.0192" y1="1.35" x2="-3.0192" y2="-1.35" width="0.12" layer="21"/>
+<wire x1="-3.0192" y1="-1.35" x2="2" y2="-1.35" width="0.12" layer="21"/>
+<wire x1="2" y1="-1.35" x2="-2" y2="-1.35" width="0.12" layer="51"/>
+<wire x1="-2" y1="-1.35" x2="-2" y2="1.35" width="0.12" layer="51"/>
+<wire x1="-2" y1="1.35" x2="2" y2="1.35" width="0.12" layer="51"/>
+<wire x1="2" y1="1.35" x2="2" y2="-1.35" width="0.12" layer="51"/>
+<smd name="1" x="-2.11" y="0" dx="1.1904" dy="2.0153" layer="1"/>
+<smd name="2" x="2.11" y="0" dx="1.1904" dy="2.0153" layer="1"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+</package>
+<package name="SOD6126X290" urn="urn:adsk.eagle:footprint:48498294/1" library_version="19" use_placeholder="yes">
+<description>SOD, 6.10 mm span, 4.33 X 2.60 X 2.90 mm body
+&lt;p&gt;SOD package with 6.10 mm span with body size 4.33 X 2.60 X 2.90 mm&lt;/p&gt;</description>
+<wire x1="2.3" y1="1.475" x2="-3.9179" y2="1.475" width="0.12" layer="21"/>
+<wire x1="-3.9179" y1="1.475" x2="-3.9179" y2="-1.475" width="0.12" layer="21"/>
+<wire x1="-3.9179" y1="-1.475" x2="2.3" y2="-1.475" width="0.12" layer="21"/>
+<wire x1="2.3" y1="-1.475" x2="-2.3" y2="-1.475" width="0.12" layer="51"/>
+<wire x1="-2.3" y1="-1.475" x2="-2.3" y2="1.475" width="0.12" layer="51"/>
+<wire x1="-2.3" y1="1.475" x2="2.3" y2="1.475" width="0.12" layer="51"/>
+<wire x1="2.3" y1="1.475" x2="2.3" y2="-1.475" width="0.12" layer="51"/>
+<smd name="1" x="-2.7048" y="0" dx="1.7981" dy="1.7253" layer="1"/>
+<smd name="2" x="2.7048" y="0" dx="1.7981" dy="1.7253" layer="1"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+</package>
+<package name="SOD3715X135" urn="urn:adsk.eagle:footprint:48498302/1" library_version="19" use_placeholder="yes">
+<description>SOD, 3.70 mm span, 2.70 X 1.55 X 1.35 mm body
+&lt;p&gt;SOD package with 3.70 mm span with body size 2.70 X 1.55 X 1.35 mm&lt;/p&gt;</description>
+<wire x1="1.425" y1="0.85" x2="-2.5991" y2="0.85" width="0.12" layer="21"/>
+<wire x1="-2.5991" y1="0.85" x2="-2.5991" y2="-0.85" width="0.12" layer="21"/>
+<wire x1="-2.5991" y1="-0.85" x2="1.425" y2="-0.85" width="0.12" layer="21"/>
+<wire x1="1.425" y1="-0.85" x2="-1.425" y2="-0.85" width="0.12" layer="51"/>
+<wire x1="-1.425" y1="-0.85" x2="-1.425" y2="0.85" width="0.12" layer="51"/>
+<wire x1="-1.425" y1="0.85" x2="1.425" y2="0.85" width="0.12" layer="51"/>
+<wire x1="1.425" y1="0.85" x2="1.425" y2="-0.85" width="0.12" layer="51"/>
+<smd name="1" x="-1.7215" y="0" dx="1.1272" dy="0.7839" layer="1"/>
+<smd name="2" x="1.7215" y="0" dx="1.1272" dy="0.7839" layer="1"/>
+<text x="0" y="1.27" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="DIOM5336X265N" urn="urn:adsk.eagle:footprint:16378175/4" library_version="19" use_placeholder="yes">
+<description>Molded Body, 5.35 X 3.63 X 2.65 mm body
+&lt;p&gt;Molded Body package with body size 5.35 X 3.63 X 2.65 mm&lt;/p&gt;</description>
+<wire x1="2.8" y1="1.975" x2="-3.6202" y2="1.975" width="0.12" layer="21"/>
+<wire x1="-3.6202" y1="1.975" x2="-3.6202" y2="-1.975" width="0.12" layer="21"/>
+<wire x1="-3.6202" y1="-1.975" x2="2.8" y2="-1.975" width="0.12" layer="21"/>
+<wire x1="2.8" y1="-1.975" x2="-2.8" y2="-1.975" width="0.12" layer="51"/>
+<wire x1="-2.8" y1="-1.975" x2="-2.8" y2="1.975" width="0.12" layer="51"/>
+<wire x1="-2.8" y1="1.975" x2="2.8" y2="1.975" width="0.12" layer="51"/>
+<wire x1="2.8" y1="1.975" x2="2.8" y2="-1.975" width="0.12" layer="51"/>
+<smd name="1" x="-2.1641" y="0" dx="2.2841" dy="2.1239" layer="1"/>
+<smd name="2" x="2.1641" y="0" dx="2.2841" dy="2.1239" layer="1"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SODFL7959X110" urn="urn:adsk.eagle:footprint:48498295/1" library_version="19" use_placeholder="yes">
+<description>SODFL, 7.95 mm span, 6.88 X 5.90 X 1.10 mm body
+&lt;p&gt;SODFL package with 7.95 mm span with body size 6.88 X 5.90 X 1.10 mm&lt;/p&gt;</description>
+<wire x1="3.575" y1="3.125" x2="-4.5967" y2="3.125" width="0.12" layer="21"/>
+<wire x1="-4.5967" y1="3.125" x2="-4.5967" y2="-3.125" width="0.12" layer="21"/>
+<wire x1="-4.5967" y1="-3.125" x2="3.575" y2="-3.125" width="0.12" layer="21"/>
+<wire x1="3.575" y1="-3.125" x2="-3.575" y2="-3.125" width="0.12" layer="51"/>
+<wire x1="-3.575" y1="-3.125" x2="-3.575" y2="3.125" width="0.12" layer="51"/>
+<wire x1="-3.575" y1="3.125" x2="3.575" y2="3.125" width="0.12" layer="51"/>
+<wire x1="3.575" y1="3.125" x2="3.575" y2="-3.125" width="0.12" layer="51"/>
+<smd name="1" x="-3.4233" y="0" dx="1.7188" dy="3.2202" layer="1"/>
+<smd name="2" x="3.4233" y="0" dx="1.7188" dy="3.2202" layer="1"/>
+<text x="0" y="3.81" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="DIOM5226X290N" urn="urn:adsk.eagle:footprint:16378179/4" library_version="19" use_placeholder="yes">
+<description>Molded Body, 5.20 X 2.60 X 2.90 mm body
+&lt;p&gt;Molded Body package with body size 5.20 X 2.60 X 2.90 mm&lt;/p&gt;</description>
+<wire x1="2.8" y1="1.475" x2="-3.6179" y2="1.475" width="0.12" layer="21"/>
+<wire x1="-3.6179" y1="1.475" x2="-3.6179" y2="-1.475" width="0.12" layer="21"/>
+<wire x1="-3.6179" y1="-1.475" x2="2.8" y2="-1.475" width="0.12" layer="21"/>
+<wire x1="2.8" y1="-1.475" x2="-2.8" y2="-1.475" width="0.12" layer="51"/>
+<wire x1="-2.8" y1="-1.475" x2="-2.8" y2="1.475" width="0.12" layer="51"/>
+<wire x1="-2.8" y1="1.475" x2="2.8" y2="1.475" width="0.12" layer="51"/>
+<wire x1="2.8" y1="1.475" x2="2.8" y2="-1.475" width="0.12" layer="51"/>
+<smd name="1" x="-2.1079" y="0" dx="2.392" dy="1.5653" layer="1"/>
+<smd name="2" x="2.1079" y="0" dx="2.392" dy="1.5653" layer="1"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="5-534237-8" urn="urn:adsk.eagle:package:10989941/2" type="model">
+<packageinstances>
+<packageinstance name="5-534237-8"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD3715X135" urn="urn:adsk.eagle:package:48498329/1" wip_urn="urn:adsk.wipprod:fs.file:vf.2PpinAfRRuSMHBfPsl77pA?version=2" type="model">
+<description>SOD, 3.70 mm span, 2.70 X 1.55 X 1.35 mm body
+&lt;p&gt;SOD package with 3.70 mm span with body size 2.70 X 1.55 X 1.35 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOD3715X135"/>
+</packageinstances>
+</package3d>
+<package3d name="DIOMELF3516L" urn="urn:adsk.eagle:package:16378190/5" wip_urn="urn:adsk.wipprod:fs.file:vf.QNXXNkmqT9-4Vp-MDzX60g?version=2" type="model">
+<description>MELF, 3.50 mm length, 1.65 mm diameter
+&lt;p&gt;MELF Diode package with 3.50 mm length and 1.65 mm diameter&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DIOMELF3516"/>
+</packageinstances>
+</package3d>
+<package3d name="SODFL7959X110" urn="urn:adsk.eagle:package:48498331/1" wip_urn="urn:adsk.wipprod:fs.file:vf.__b7PYR-Q3uiqQsoq7eO6w?version=2" type="model">
+<description>SODFL, 7.95 mm span, 6.88 X 5.90 X 1.10 mm body
+&lt;p&gt;SODFL package with 7.95 mm span with body size 6.88 X 5.90 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SODFL7959X110"/>
+</packageinstances>
+</package3d>
+<package3d name="SODFL1608X70" urn="urn:adsk.eagle:package:16378187/4" wip_urn="urn:adsk.wipprod:fs.file:vf.pSdNFVu9SruapGVw3LEf6Q?version=2" type="model">
+<description>SODFL, 1.60 mm span, 1.20 X 0.80 X 0.70 mm body
+&lt;p&gt;SODFL package with 1.60 mm span with body size 1.20 X 0.80 X 0.70 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SODFL1608X70"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD6126X290" urn="urn:adsk.eagle:package:48498328/1" wip_urn="urn:adsk.wipprod:fs.file:vf.uMnFCnDHR1K-a-oVs7SAjg?version=2" type="model">
+<description>SOD, 6.10 mm span, 4.33 X 2.60 X 2.90 mm body
+&lt;p&gt;SOD package with 6.10 mm span with body size 4.33 X 2.60 X 2.90 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOD6126X290"/>
+</packageinstances>
+</package3d>
+<package3d name="SODFL2513X75" urn="urn:adsk.eagle:package:48498330/1" wip_urn="urn:adsk.wipprod:fs.file:vf.AAiQJGzWSZGTeCP2Q_WG1Q?version=2" type="model">
+<description>SODFL, 2.50 mm span, 2.20 X 1.30 X 0.75 mm body
+&lt;p&gt;SODFL package with 2.50 mm span with body size 2.20 X 1.30 X 0.75 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SODFL2513X75"/>
+</packageinstances>
+</package3d>
+<package3d name="SODFL5226X110" urn="urn:adsk.eagle:package:48498320/1" wip_urn="urn:adsk.wipprod:fs.file:vf.4VSE5ccFRVC4nmNHIaM-aA?version=2" type="model">
+<description>SODFL, 5.20 mm span, 4.28 X 2.60 X 1.10 mm body
+&lt;p&gt;SODFL package with 5.20 mm span with body size 4.28 X 2.60 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SODFL5226X110"/>
+</packageinstances>
+</package3d>
+<package3d name="SODFL5336X110" urn="urn:adsk.eagle:package:48498325/1" wip_urn="urn:adsk.wipprod:fs.file:vf.gxfvQBIeRmOBj-oI9oaHkw?version=2" type="model">
+<description>SODFL, 5.35 mm span, 4.33 X 3.63 X 1.10 mm body
+&lt;p&gt;SODFL package with 5.35 mm span with body size 4.33 X 3.63 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SODFL5336X110"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD6126X350" urn="urn:adsk.eagle:package:48498327/1" wip_urn="urn:adsk.wipprod:fs.file:vf.lQMk75nYRw-3hnUh1pd2Og?version=2" type="model">
+<description>SOD, 6.10 mm span, 4.20 X 2.65 X 3.50 mm body
+&lt;p&gt;SOD package with 6.10 mm span with body size 4.20 X 2.65 X 3.50 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOD6126X350"/>
+</packageinstances>
+</package3d>
+<package3d name="DIOM7959X625N" urn="urn:adsk.eagle:package:16378186/4" wip_urn="urn:adsk.wipprod:fs.file:vf.7H6CtUrURrWnGNiltS1bfQ?version=2" type="model">
+<description>Molded Body, 7.95 X 5.90 X 6.25 mm body
+&lt;p&gt;Molded Body package with body size 7.95 X 5.90 X 6.25 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DIOM7959X625N"/>
+</packageinstances>
+</package3d>
+<package3d name="SODFL3718X140" urn="urn:adsk.eagle:package:48498315/1" wip_urn="urn:adsk.wipprod:fs.file:vf.3NgYJNAKTKm7gdS4Q-2oww?version=1" type="model">
+<description>SODFL, 3.70 mm span, 2.80 X 1.80 X 1.40 mm body
+&lt;p&gt;SODFL package with 3.70 mm span with body size 2.80 X 1.80 X 1.40 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SODFL3718X140"/>
+</packageinstances>
+</package3d>
+<package3d name="DIOM5336X265N" urn="urn:adsk.eagle:package:16378189/4" wip_urn="urn:adsk.wipprod:fs.file:vf.kACkSpnkTWWsBkS2zn266g?version=2" type="model" footprint_synced="no">
+<description>Molded Body, 5.35 X 3.63 X 2.65 mm body
+&lt;p&gt;Molded Body package with body size 5.35 X 3.63 X 2.65 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DIOM5336X265N"/>
+</packageinstances>
+</package3d>
+<package3d name="SODFL4725X110" urn="urn:adsk.eagle:package:48498326/1" wip_urn="urn:adsk.wipprod:fs.file:vf.5BE_VcMzRJO98i5tHeTObA?version=2" type="model">
+<description>SODFL, 4.70 mm span, 3.80 X 2.50 X 1.10 mm body
+&lt;p&gt;SODFL package with 4.70 mm span with body size 3.80 X 2.50 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SODFL4725X110"/>
+</packageinstances>
+</package3d>
+<package3d name="DIOMELF5024" urn="urn:adsk.eagle:package:16378191/4" wip_urn="urn:adsk.wipprod:fs.file:vf.mljqMNr5SC6wyXeoDHh3Bg?version=2" type="model">
+<description>MELF, 5.00 mm length, 2.49 mm diameter
+&lt;p&gt;MELF Diode package with 5.00 mm length and 2.49 mm diameter&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DIOMELF5024"/>
+</packageinstances>
+</package3d>
+<package3d name="DIOM5226X290N" urn="urn:adsk.eagle:package:16378188/4" wip_urn="urn:adsk.wipprod:fs.file:vf.-uB602ngQQuN4NsHzn-yjw?version=3" type="model">
+<description>Molded Body, 5.20 X 2.60 X 2.90 mm body
+&lt;p&gt;Molded Body package with body size 5.20 X 2.60 X 2.90 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DIOM5226X290N"/>
+</packageinstances>
+</package3d>
+<package3d name="SODFL3718X115" urn="urn:adsk.eagle:package:48498333/1" wip_urn="urn:adsk.wipprod:fs.file:vf.MFWUGwDjQbu-TjjWF5Tr-g?version=2" type="model">
+<description>SODFL, 3.70 mm span, 2.80 X 1.80 X 1.15 mm body
+&lt;p&gt;SODFL package with 3.70 mm span with body size 2.80 X 1.80 X 1.15 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SODFL3718X115"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD6236X265" urn="urn:adsk.eagle:package:48498334/1" wip_urn="urn:adsk.wipprod:fs.file:vf.hREGOtcJRZe5SQguqxbhqg?version=2" type="model">
+<description>SOD, 6.22 mm span, 4.33 X 3.63 X 2.65 mm body
+&lt;p&gt;SOD package with 6.22 mm span with body size 4.33 X 3.63 X 2.65 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOD6236X265"/>
+</packageinstances>
+</package3d>
+<package3d name="SODFL2513X70" urn="urn:adsk.eagle:package:48498332/1" wip_urn="urn:adsk.wipprod:fs.file:vf.XtZP2zH0Rry90gwm3HUpSQ?version=2" type="model">
+<description>SODFL, 2.50 mm span, 1.90 X 1.30 X 0.70 mm body
+&lt;p&gt;SODFL package with 2.50 mm span with body size 1.90 X 1.30 X 0.70 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SODFL2513X70"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD9959X265" urn="urn:adsk.eagle:package:48498324/1" wip_urn="urn:adsk.wipprod:fs.file:vf.CYemmPmNTXGLC4ZaYuggGw?version=2" type="model">
+<description>SOD, 9.93 mm span, 6.88 X 5.90 X 2.65 mm body
+&lt;p&gt;SOD package with 9.93 mm span with body size 6.88 X 5.90 X 2.65 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOD9959X265"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="DGND">
+<description>&lt;h3&gt;Digital Ground Supply&lt;/h3&gt;</description>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="0" y="-0.254" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+</symbol>
+<symbol name="NODEMCU_ESP8266" library_version="1">
+<pin name="3V3@1" x="-15.24" y="12.7" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@1" x="-15.24" y="10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="TX" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="RX" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="D8" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="D7" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="D6" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="D5" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="GND@2" x="-15.24" y="-7.62" visible="pin" length="middle" direction="pwr"/>
+<pin name="3V3@2" x="-15.24" y="-10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="D4" x="-15.24" y="-12.7" visible="pin" length="middle"/>
+<pin name="D3" x="-15.24" y="-15.24" visible="pin" length="middle"/>
+<pin name="D2" x="-15.24" y="-17.78" visible="pin" length="middle"/>
+<pin name="D1" x="-15.24" y="-20.32" visible="pin" length="middle"/>
+<pin name="D0" x="-15.24" y="-22.86" visible="pin" length="middle"/>
+<pin name="VIN" x="15.24" y="12.7" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@4" x="15.24" y="10.16" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="RST" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="EN" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="3V3@3" x="15.24" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@3" x="15.24" y="0" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="CLK" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SD0" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="CMD" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="SD1" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="SD2" x="15.24" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="SD3" x="15.24" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="VV" x="15.24" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="A0" x="15.24" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-25.4" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-25.4" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<text x="-10.16" y="-27.94" size="1.27" layer="96">&gt;value</text>
+<text x="-10.16" y="17.78" size="1.27" layer="95">&gt;Name</text>
+</symbol>
+<symbol name="BUZZER">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="+" x="-7.62" y="2.54" length="short" direction="pas"/>
+<pin name="-" x="-7.62" y="-2.54" length="short" direction="pas"/>
+<text x="-5.08" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<circle x="0" y="0" radius="3.81" width="0.254" layer="94"/>
+<text x="-2" y="-1" size="1.27" layer="94">BUZZ</text>
+</symbol>
+<symbol name="ROTARY_ENCODER">
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="S1" x="-12.7" y="7.62" length="short"/>
+<pin name="S2" x="-12.7" y="2.54" length="short"/>
+<pin name="KEY" x="-12.7" y="-2.54" length="short"/>
+<pin name="GND" x="12.7" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="VCC" x="12.7" y="7.62" length="short" direction="pwr" rot="R180"/>
+<text x="-10.16" y="13.97" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<circle x="0" y="2.54" radius="5.08" width="0.254" layer="94"/>
+<text x="-8" y="10" size="1.27" layer="94">Rotary Encoder</text>
+</symbol>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+</symbol>
+<symbol name="RESISTOR">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="1.524" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.524" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="I2C_OLED_SYMBOL" library_version="6">
+<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<pin name="VCC" x="-10.16" y="2.54" length="middle"/>
+<pin name="GND" x="-10.16" y="7.62" length="middle"/>
+<pin name="SCL" x="-10.16" y="-2.54" length="middle"/>
+<pin name="SDA" x="-10.16" y="-7.62" length="middle"/>
+<text x="-7.62" y="12.7" size="1.27" layer="95">&gt;NAME</text>
+<text x="2.54" y="-12.7" size="1.27" layer="97">U7</text>
+</symbol>
+<symbol name="5-534237-8" urn="urn:adsk.eagle:symbol:28493010/1" library_version="3">
+<pin name="1" x="7.62" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="7.62" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="3" x="7.62" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="4" x="7.62" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="5" x="7.62" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="6" x="7.62" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="7" x="7.62" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="8" x="7.62" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="9" x="7.62" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="10" x="7.62" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<wire x1="2.54" y1="12.7" x2="2.54" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="2.54" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="15.24" size="2.54" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-20.32" size="2.54" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DIODE" urn="urn:adsk.eagle:symbol:16378170/5" library_version="19">
+<description>Diode</description>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-5.08" size="1.778" layer="95" align="center">&gt;SPICEMODEL</text>
+<text x="0" y="-7.62" size="1.778" layer="95" align="center">&gt;SPICEEXTRA</text>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="1.27" x2="1.397" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
+&lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
+<gates>
+<gate name="1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NODEMCU_ESP8266" prefix="NODE" library_version="4">
+<description>Node MCU V2 (ESP8266)
+Created by Harish</description>
+<gates>
+<gate name="G$1" symbol="NODEMCU_ESP8266" x="-17.78" y="20.32"/>
+</gates>
+<devices>
+<device name="" package="NODEMCU_ESP8266">
+<connects>
+<connect gate="G$1" pin="3V3@1" pad="3V3@1"/>
+<connect gate="G$1" pin="3V3@2" pad="3V3@2"/>
+<connect gate="G$1" pin="3V3@3" pad="3V3@3"/>
+<connect gate="G$1" pin="A0" pad="A0"/>
+<connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CMD" pad="CMD"/>
+<connect gate="G$1" pin="D0" pad="D0"/>
+<connect gate="G$1" pin="D1" pad="D1"/>
+<connect gate="G$1" pin="D2" pad="D2"/>
+<connect gate="G$1" pin="D3" pad="D3"/>
+<connect gate="G$1" pin="D4" pad="D4"/>
+<connect gate="G$1" pin="D5" pad="D5"/>
+<connect gate="G$1" pin="D6" pad="D6"/>
+<connect gate="G$1" pin="D7" pad="D7"/>
+<connect gate="G$1" pin="D8" pad="D8"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND@5"/>
+<connect gate="G$1" pin="GND@1" pad="GND@1"/>
+<connect gate="G$1" pin="GND@2" pad="GND@2"/>
+<connect gate="G$1" pin="GND@3" pad="GND@3"/>
+<connect gate="G$1" pin="GND@4" pad="GND@4"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="SD0" pad="SDO"/>
+<connect gate="G$1" pin="SD1" pad="SD1"/>
+<connect gate="G$1" pin="SD2" pad="SD2"/>
+<connect gate="G$1" pin="SD3" pad="SD3"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+<connect gate="G$1" pin="VV" pad="VV"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUZZER_PASSIVE" prefix="BZ" library_version="3">
+<description>Passive Piezo Buzzer
+Diameter: 12mm
+Voltage: 3-12V</description>
+<gates>
+<gate name="G$1" symbol="BUZZER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BUZZER_PASSIVE_12MM">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ROTARY_ENCODER_EC11" prefix="ENC" library_version="3">
+<description>EC11 Rotary Encoder with Push Button
+Pulses: 20 per rotation
+Pins: S1, S2, KEY, VCC, GND</description>
+<gates>
+<gate name="G$1" symbol="ROTARY_ENCODER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EC11_ROTARY_ENCODER">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="KEY" pad="KEY"/>
+<connect gate="G$1" pin="S1" pad="S1"/>
+<connect gate="G$1" pin="S2" pad="S2"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2N2222" prefix="T">
+<description>&lt;b&gt;NPN TRANSISTOR&lt;/b&gt;
+Big oval pads</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO92-EBC-OVAL">
+<connects>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="E" pad="E"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KOHM" prefix="R">
+<description>&lt;h3&gt;10kΩ resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-HORIZ-1/4W-1%" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12183" constant="no"/>
+<attribute name="VALUE" value="10k" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT-1/4W-1%" package="AXIAL-0.1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12183"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT_KIT-1/4W-1%" package="AXIAL-0.1-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12183" constant="no"/>
+<attribute name="VALUE" value="10k" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT-1/4W-5%" package="AXIAL-0.1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09435"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT_KIT-1/4W-5%" package="AXIAL-0.1-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09435"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ-1/4W-5%" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09435"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ_KIT-1/4W-5%" package="AXIAL-0.3-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09435"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ_KIT-1/4W-1%" package="AXIAL-0.3-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12183"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT-1/6W-5%" package="AXIAL-0.1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08375"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT_KIT-1/6W-5%" package="AXIAL-0.1-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08375"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ-1/6W-5%" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08375"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ_KIT-1/6W-5%" package="AXIAL-0.3-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08375"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-1/10W-1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-00824"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402-1/16W-1%" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-14241"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-1/16W-1%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-14241" constant="no"/>
+<attribute name="VALUE" value="10k" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402-1/10W-0.1%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-16147" constant="no"/>
+<attribute name="VALUE" value="10K" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="I2C_OLED" library_version="12">
+<gates>
+<gate name="OLEDSSD1306" symbol="I2C_OLED_SYMBOL" x="38.1" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="I2C_OLED_PACKAGE">
+<connects>
+<connect gate="OLEDSSD1306" pin="GND" pad="1"/>
+<connect gate="OLEDSSD1306" pin="SCL" pad="3"/>
+<connect gate="OLEDSSD1306" pin="SDA" pad="4"/>
+<connect gate="OLEDSSD1306" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5-534237-8" prefix="J" library_version="3">
+<description>&lt;h3&gt; CONN RCPT 10POS 0.1 GOLD PCB &lt;/h3&gt;
+&lt;BR&gt;
+&lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=534237&amp;DocType=Customer+Drawing&amp;DocLang=English"&gt; Manufacturer's datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="5-534237-8" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="5-534237-8">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10989941/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATED_BY" value=" PCBLayout.com" constant="no"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="A32910-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="TE Connectivity AMP Connectors" constant="no"/>
+<attribute name="MPN" value="5-534237-8" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE" prefix="D" library_version="19">
+<description>Diode Rectifier - Generic</description>
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DO-213AA(SOD-80)" package="DIOMELF3516">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.QNXXNkmqT9-4Vp-MDzX60g?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-213AA(SOD-80)" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="SOD-80" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-213AB(5025-METRIC)" package="DIOMELF5024">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.mljqMNr5SC6wyXeoDHh3Bg?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-213AB(5025-METRIC MELF)" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-213AB" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-215-AD" package="SOD3715X135">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.2PpinAfRRuSMHBfPsl77pA?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-215-AD" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-215-AD" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-215-AC" package="SOD6126X290">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.uMnFCnDHR1K-a-oVs7SAjg?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-215-AC" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-215-AC" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-215-BA" package="SOD6126X350">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.lQMk75nYRw-3hnUh1pd2Og?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-215-BA" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-215-BA" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-215-AA" package="SOD6236X265">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.hREGOtcJRZe5SQguqxbhqg?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-215-AA" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-215-AA" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-215-AB" package="SOD9959X265">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.CYemmPmNTXGLC4ZaYuggGw?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-215-AB" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-215-AB" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-219-AC(SOD323F)" package="SODFL2513X70">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.XtZP2zH0Rry90gwm3HUpSQ?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-219-AC(SOD323F)" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="SOD323F" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-219-AD" package="SODFL2513X75">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.AAiQJGzWSZGTeCP2Q_WG1Q?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-219-AD" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-219-AD" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-219-AB(SOD123F)" package="SODFL3718X115">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.MFWUGwDjQbu-TjjWF5Tr-g?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-219-AB(SOD123F)" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="SOD123F" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-219-AA" package="SODFL3718X140">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.3NgYJNAKTKm7gdS4Q-2oww?version=1"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-219-AA" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-219-AA" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-221-AA" package="SODFL5336X110">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.gxfvQBIeRmOBj-oI9oaHkw?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-221-AA" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-221-AA" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-221-AB" package="SODFL7959X110">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.__b7PYR-Q3uiqQsoq7eO6w?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-221-AB" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-221-AB" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-221-AC" package="SODFL5226X110">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.4VSE5ccFRVC4nmNHIaM-aA?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-221-AC" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-221-AC" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-221-AD" package="SODFL4725X110">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.5BE_VcMzRJO98i5tHeTObA?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-221-AD" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="DO-221-AD" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="SODFL(1608-METRIC)" package="SODFL1608X70">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.pSdNFVu9SruapGVw3LEf6Q?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="_">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount SODFL(1608-METRIC)" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="SODFL" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-214AC(SMA)" package="DIOM5226X290N">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.-uB602ngQQuN4NsHzn-yjw?version=3"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-214AC(SMA)" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="SMA" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-214AA(SMB)" package="DIOM5336X265N">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.kACkSpnkTWWsBkS2zn266g?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-214AA(SMB)" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="SMB" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO-214AB(SMC)" package="DIOM7959X625N">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.wipprod:fs.file:vf.7H6CtUrURrWnGNiltS1bfQ?version=2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CATEGORY" value="Diode" constant="no"/>
+<attribute name="DATASHEET" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Generic diode Surface Mount DO-214AB(SMC)" constant="no"/>
+<attribute name="FORWARD_CURRENT" value="" constant="no"/>
+<attribute name="FORWARD_VOLTAGE" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="" constant="no"/>
+<attribute name="PACKAGE_SIZE" value="SMC" constant="no"/>
+<attribute name="PACKAGE_TYPE" value="Surface Mount" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="REVERSE_VOLTAGE" value="" constant="no"/>
+<attribute name="ROHS" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUBCATEGORY" value="Rectifiers" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+<attribute name="ZENER_VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+<spice>
+<pinmapping spiceprefix="D">
+<pinmap gate="G$1" pin="A" pinorder="1"/>
+<pinmap gate="G$1" pin="C" pinorder="2"/>
+</pinmapping>
+<model name="DMOD">
+**********************
+* Autodesk EAGLE - Spice Model File
+* Date: 9/17/17
+* basic diode intrinsic model
+**********************
+.MODEL DMOD D</model>
+</spice>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+<note version="8.4" severity="warning">
+Since Version 8.4, EAGLE supports properties for SPICE simulation. 
+Probes in schematics and SPICE mapping objects found in parts and library devices
+will not be understood with this version. Update EAGLE to the latest version
+for full support of SPICE simulation. 
+</note>
+</compatibility>
+</eagle>
