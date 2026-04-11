@@ -5,7 +5,13 @@
 #include <Adafruit_VL6180X.h>
 #include <EEPROM.h>
 
-// ================== FORWARD DECLARATIONS ==================
+#include <ESP8266WiFi.h>
+#include <ESP8266HTTPClient.h>
+
+const char* ssid = "tplink1";
+const char* password = "888811288";
+const char* ntfy_url = "http://ntfy.sh/Coaster";
+
 void triggerReady();
 float estimateLiquidTemp(float rawBottomTemp, float ambientTemp);
 void handleEncoder();
@@ -22,13 +28,11 @@ float measureDistance();
 void startBrewing();
 long remaining();
 void finishBrewing();
-void wakeDisplay(); // <--- DODANO
+void wakeDisplay();
+void sendPhoneNotification();
 
-// ================== KALIBRACJA - AUTO-ADAPTACYJNA ==================
-// Próg temperatury ochrony czujnika
 #define SAFETY_TEMP_THRESHOLD 45.0
 
-// ================== OLED ss_oled ==================
 SSOLED ssoled;
 #define OLED_ADDR 0x3C
 #define SDA_PIN D2
@@ -83,7 +87,7 @@ float peakTemp = 0.0;
 
 // --- AUTO-KALIBRACJA ---
 float fixedAmbient = 22.0;          // Snapshot temp otoczenia
-float peakBottomTemp = 0.0;         // Peak temp dna (do kalibracji)
+float peakBottomTemp = 0.0;         // Peak temp dna 
 unsigned long calibrationTime = 0;  // Kiedy wykryto peak
 
 // Alarm
@@ -94,10 +98,10 @@ float lastStableTemp = 0.0;
 unsigned long stableTempSince = 0;
 const unsigned long STABLE_TIMEOUT = 60000;
 
-// ================== WYGASZANIE EKRANU (DODANO) ==================
+// ================== WYGASZANIE EKRANU ==================
 unsigned long lastActivityTime = 0;
 bool isDisplayAwake = true;
-const unsigned long SLEEP_TIMEOUT = 300000; // 5 minut w milisekundach (5 * 60 * 1000)
+const unsigned long SLEEP_TIMEOUT = 300000; 
 
 // ================== ZMIENNE ENKODERA Z PRZERWANIAMI I QUADRATURE ==================
 volatile int encoderPosition = 0;
@@ -111,15 +115,13 @@ const int DISPLAY_REFRESH_INTERVAL = 50;
 
 char buffer[20];
 
-// ================== FUNKCJA PRZERWANIA ENKODERA Z QUADRATURE ==================
 void IRAM_ATTR handleEncoderInterrupt() {
-  int MSB = digitalRead(ENC_S1); // Najbardziej znaczący bit
-  int LSB = digitalRead(ENC_S2); // Najmniej znaczący bit
+  int MSB = digitalRead(ENC_S1);
+  int LSB = digitalRead(ENC_S2);
 
-  int encoded = (MSB << 1) | LSB; // Konwersja do liczby
-  int sum = (lastEncoded << 2) | encoded; // Dodaj poprzedni stan
-
-  // Tablica stanów quadrature - POPRAWNA DETEKCJA KIERUNKU
+  int encoded = (MSB << 1) | LSB;
+  int sum = (lastEncoded << 2) | encoded;
+ 
   if(sum == 0b1101 || sum == 0b0100 || sum == 0b0010 || sum == 0b1011) {
     encoderPosition++;
   }
@@ -130,28 +132,39 @@ void IRAM_ATTR handleEncoderInterrupt() {
   lastEncoded = encoded; // Zapisz aktualny stan
 }
 
-// ================== FUNKCJA WYBUDZANIA EKRANU (DODANO) ==================
 void wakeDisplay() {
-  lastActivityTime = millis(); // Reset timera bezczynności
+  lastActivityTime = millis();
   if (!isDisplayAwake) {
     isDisplayAwake = true;
     needDisplayUpdate = true;
-    lastDrawnState = (State)-1; // Wymusza pełne przerysowanie
+    lastDrawnState = (State)-1;
   }
 }
 
-// ================== TRIGGER READY ==================
+void sendPhoneNotification() {
+  if (WiFi.status() == WL_CONNECTED) {
+    WiFiClient client;
+    HTTPClient http;
+    http.begin(client, ntfy_url);
+    http.addHeader("Title", "Smart Coaster"); 
+    http.addHeader("Priority", "5"); 
+    http.addHeader("Tags", "rotating_light,alarm_clock");
+    http.POST("Twój napój osiągnął idealną temperaturę i jest gotowy do picia!");
+    http.end();
+  }
+}
+
 void triggerReady() {
   state = READY_TO_DRINK;
   tempWarningShown = true;
   stableTempSince = 0;
   lastStableTemp = 0;
   lastReadyBeepTime = 0;
-  wakeDisplay(); // Wybudź ekran gdy gotowe
+  wakeDisplay();
   needDisplayUpdate = true;
+  sendPhoneNotification();
 }
 
-// ================== FUNKCJA ESTYMACJI Z AUTO-KALIBRACJĄ ==================
 float estimateLiquidTemp(float rawBottomTemp, float ambientTemp) {
   if (isnan(rawBottomTemp) || rawBottomTemp < ambientTemp) {
     return ambientTemp;
@@ -165,35 +178,41 @@ float estimateLiquidTemp(float rawBottomTemp, float ambientTemp) {
 
   // POPRAWIONE PROGI
   if (diff > 51) {
-    adaptiveCoeff = baseFactor * 1.0;      // >95°C - dużo dodaj
+    adaptiveCoeff = baseFactor * 1.0;      // >95°C 
   } 
   else if (diff > 50) {
     adaptiveCoeff = baseFactor * 0.95;      // 90-95°C
   } 
   else if (diff > 45) {
-    adaptiveCoeff = baseFactor * 0.85;      // 80-90°C - tu Twój peak
+    adaptiveCoeff = baseFactor * 0.85;      // 80-90°C 
   }
   else if (diff > 40) {
     adaptiveCoeff = baseFactor * 0.80;     // 70-80°C
   } 
   else if (diff > 30) {
-    adaptiveCoeff = baseFactor * 0.75;     // 60-70°C - tutaj teraz jesteś
+    adaptiveCoeff = baseFactor * 0.75;     // 60-70°C 
   } 
   else if (diff > 20) {
     adaptiveCoeff = baseFactor * 0.65;     // 50-60°C
   } 
   else {
-    adaptiveCoeff = baseFactor * 0.50;     // <50°C - mało dodaj
+    adaptiveCoeff = baseFactor * 0.50;     // <50°C 
   }
 
   float liquidTemp = rawBottomTemp + (diff * adaptiveCoeff);
   return liquidTemp;
 }
 
-// ================== SETUP ==================
 void setup() {
   Serial.begin(9600);
   Serial.println("\n=== START ===");
+
+  WiFi.begin(ssid, password);
+  int retries = 0;
+  while (WiFi.status() != WL_CONNECTED && retries < 20) {
+    delay(500);
+    retries++;
+  }
 
   EEPROM.begin(EEPROM_SIZE);
   loadSettings();
@@ -233,10 +252,13 @@ void setup() {
   bool vlOK = vl.begin();
   Serial.println(vlOK ? "VL OK" : "VL ERROR");
 
+  bool wifiOK = (WiFi.status() == WL_CONNECTED);
+
   oledFill(&ssoled, 0, 1);
-  oledWriteString(&ssoled, 0, 0, 1, (char*)"Sensors:", FONT_NORMAL, 0, 1);
-  oledWriteString(&ssoled, 0, 0, 3, mlxOK ? (char*)"MLX: OK" : (char*)"MLX: ERROR", FONT_NORMAL, 0, 1);
-  oledWriteString(&ssoled, 0, 0, 5, vlOK ? (char*)"VL: OK" : (char*)"VL: ERROR", FONT_NORMAL, 0, 1);
+  oledWriteString(&ssoled, 0, 0, 1, (char*)"System:", FONT_NORMAL, 0, 1);
+  oledWriteString(&ssoled, 0, 0, 3, mlxOK ? (char*)"MLX: OK" : (char*)"MLX: ERR", FONT_NORMAL, 0, 1);
+  oledWriteString(&ssoled, 0, 0, 5, vlOK ? (char*)"VL: OK" : (char*)"VL: ERR", FONT_NORMAL, 0, 1);
+  oledWriteString(&ssoled, 0, 0, 7, wifiOK ? (char*)"WIFI: OK" : (char*)"WIFI: ERR", FONT_NORMAL, 0, 1);
 
   delay(1500);
 
@@ -251,13 +273,13 @@ void setup() {
 void loop() {
   unsigned long now = millis();
   
-  // Enkoder obsługiwany przez przerwania - tylko sprawdzamy czy są zmiany
+
   handleEncoder();
 
   // --- LOGIKA USYPIANIA EKRANU ---
   if (isDisplayAwake && (now - lastActivityTime > SLEEP_TIMEOUT)) {
     isDisplayAwake = false;
-    oledFill(&ssoled, 0, 1); // Wyczyść ekran do zera (czarny)
+    oledFill(&ssoled, 0, 1);
   }
 
   // 1. Sprawdzanie odległości z ochroną termiczną
@@ -386,25 +408,24 @@ void loop() {
   checkDisplayUpdate();
 }
 
-// ================== ENKODER - PRZERWANIA Z QUADRATURE ==================
 void handleEncoder() {
   static int lastPosition = 0;
   
-  // Enkoder ma 4 impulsy na jeden "klik" mechaniczny - dzielimy przez 4
+  
   int currentPosition = encoderPosition / 4;
   
-  // Przerwania aktualizują encoderPosition - tutaj tylko sprawdzamy zmiany
+
   if (currentPosition != lastPosition) {
     int delta = currentPosition - lastPosition;
     lastPosition = currentPosition;
     
     wakeDisplay(); // Wybudź ekran po obróceniu enkodera!
     
-    // STAŁE KROKI - każdy KLIK mechaniczny = 1 krok
-    int timeStep = 10;   // 10 sekund na klik
-    int tempStep = 1;    // 1°C na klik
+
+    int timeStep = 10; 
+    int tempStep = 1;    
     
-    // Zastosuj zmianę
+
     if (state == MENU_TIME) {
       adjustTime(delta * timeStep);
     } else if (state == MENU_TEMP) {
@@ -418,8 +439,7 @@ void handleEncoder() {
     if (now - lastButtonTime > 250) {
       lastButtonTime = now;
       
-      wakeDisplay(); // Wybudź ekran po kliknięciu!
-      
+      wakeDisplay();
       encoderClick();
       while (digitalRead(ENC_KEY) == LOW) delay(10);
     }
@@ -451,9 +471,8 @@ void adjustTemp(int d) {
   needDisplayUpdate = true;
 }
 
-// ================== DISPLAY ==================
 void checkDisplayUpdate() {
-  if (!isDisplayAwake) return; // NIE RYSUJ NICZEGO GDY EKRAN ŚPI
+  if (!isDisplayAwake) return; 
 
   if (needDisplayUpdate && (millis() - lastDisplayDrawTime > DISPLAY_REFRESH_INTERVAL)) {
     lastDisplayDrawTime = millis();
@@ -527,7 +546,6 @@ void beep(int f, int d) {
   tone(BUZZER_PIN, f, d);
 }
 
-// ================== INNE ==================
 void loadSettings() {
   long readTime;
   float readTemp;
@@ -566,7 +584,7 @@ long remaining() {
   return (brewDuration > passed) ? brewDuration - passed : 0;
 }
 
-// Poniższa funkcja została naprawiona (wcześniej ucięta i podwójnie skopiowana)
+
 void finishBrewing() {
   state = DONE;
   lastStableTemp = 0;

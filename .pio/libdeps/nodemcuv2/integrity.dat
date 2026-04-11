@@ -1,0 +1,7 @@
+https://github.com/bitbank2/ss_oled.git
+Wire
+SPI
+Adafruit BusIO
+https://github.com/adafruit/Adafruit_VL6180X.git
+Adafruit Unified Sensor
+https://github.com/adafruit/Adafruit-MLX90614-Library.git
