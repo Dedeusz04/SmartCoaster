@@ -1,4 +1,4 @@
-# Smart Coaster — ESP8266 Beverage Temperature Monitor
+# Smart Coaster - ESP8266 Beverage Temperature Monitor
 
 An embedded system built on the **NodeMCU ESP8266** that detects cup presence, monitors beverage temperature in real time, and alerts the user when the drink has cooled to a configured target temperature.
 
